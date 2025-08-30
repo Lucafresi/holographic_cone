@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-30T22:09:05.576204Z",
+  "brane": "IR",
+  "sigma": 1,
+  "basis": "integral (Y_int = 6Y); 2T(fund)=1",
+  "channels": [
+    "SU2_cubic",
+    "SU3_cubic",
+    "U1_SU2sq",
+    "U1_SU3sq",
+    "U1_cubic",
+    "U1_grav"
+  ],
+  "K_exact": {
+    "U1_cubic": "0",
+    "U1_grav": "0",
+    "SU3_cubic": "0",
+    "U1_SU3sq": "0",
+    "U1_SU2sq": "0",
+    "SU2_cubic": "0"
+  },
+  "K_float": {
+    "U1_cubic": 0.0,
+    "U1_grav": 0.0,
+    "SU3_cubic": 0.0,
+    "U1_SU3sq": 0.0,
+    "U1_SU2sq": 0.0,
+    "SU2_cubic": 0.0
+  },
+  "k_solution_min": {
+    "U1_cubic": 0,
+    "U1_grav": 0,
+    "SU3_cubic": 0,
+    "U1_SU3sq": 0,
+    "U1_SU2sq": 0,
+    "SU2_cubic": 0
+  },
+  "pass": true
+}
