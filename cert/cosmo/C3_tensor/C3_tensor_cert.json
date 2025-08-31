@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:15:59.055666Z",
+  "implemented_phys": true,
+  "ledger": {
+    "sigma_UV": -1,
+    "sigma_IR": 1,
+    "collar": "product",
+    "notes": "Formule collar tensor (EH+GHY)."
+  },
+  "inputs": {
+    "ops": {
+      "path": "tmp/tensor_ops.npz",
+      "sha256": "76c2384c0628513c4b3c2e3dd0239abb78b229923b72ff9f751e62df05370e2c"
+    },
+    "bg": {
+      "path": "cert/bg/volume.json",
+      "sha256": "4f52a4a0bf8b7b1fe7592519ca401c76e16eb971973a477f63367bd59577cff0"
+    },
+    "topo": {
+      "path": "cert/topo/levels.json",
+      "sha256": "b9a54f6b849e4cb6c9e1aca9f1a9ff85eff0fa6770da3b642c6aafbe5c048dea"
+    },
+    "indices": {
+      "path": "cert/topo/indices.json",
+      "sha256": "300677f36bff72cb6c31c02a5f497c78ee00712363dbf181eb1cf3c4603b0ba1"
+    }
+  },
+  "numbers": {
+    "Z_tensor": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "M_tensor2": {
+      "value": 0.0,
+      "err_est": 0.0
+    },
+    "c_GW2": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "g_tensor": {
+      "value": 0.0,
+      "err_est": 0.0
+    }
+  },
+  "checks": {
+    "Z_pos": true,
+    "M2_zero": true,
+    "c2_unity": true,
+    "g_zero": true
+  },
+  "PASS": true
+}

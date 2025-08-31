@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:15:59.077141Z",
+  "inputs": {
+    "C3": {
+      "path": "cert/cosmo/C3_tensor/C3_tensor_cert.json",
+      "sha256": "7069213f042173f4ac4ca5fc79e104d975d07a4f540d464d8ba920702c2bd22b"
+    },
+    "vacA": {
+      "path": "cert/topo/brane_vacuum_A.json",
+      "sha256": "13a588320dbd4993186d50d74ffb419e5d8df82f46418d1c7249c6af5fc52287"
+    },
+    "vacB": {
+      "path": "cert/topo/brane_vacuum_B.json",
+      "sha256": "5ac47072a998a8479f7a2843527c8cfee0df19582b7c88b63b8bd12867723fa8"
+    }
+  },
+  "diagnostics": {
+    "delta_uniform_UV": 0.8811457877164051,
+    "delta_uniform_IR": 0.8811457877164051,
+    "g_tensor": 0.0
+  },
+  "pass": true,
+  "note": "Shift uniforme \u21d2 nessuna sorgente tensoriale: g_tensor=0 (ledger)."
+}

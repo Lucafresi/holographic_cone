@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:15:59.032528Z",
+  "profile": "cert/bg/a_profile.csv",
+  "sha256_profile": "bc41d6b5c17c4e021ce2c9c9c9cf6d4fb496c3b1829a618f58d18673eae3d489",
+  "n_points": 2000,
+  "I_a2_est_trapz": 0.9994999999999999
+}
