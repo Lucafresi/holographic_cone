@@ -1,0 +1,31 @@
+{
+  "ledger_RS": {
+    "L": 1.0,
+    "z_UV": 0.001,
+    "z_IR": 9325.35
+  },
+  "topo_ledger": {
+    "g5_X_sq": 0.0,
+    "kappa_a": 0.0,
+    "ell": 0.0,
+    "profile": "flat"
+  },
+  "dark_state": {
+    "spin": "vector"
+  },
+  "Mpl_reduced_GeV": 2.435e+18,
+  "gstar": 106.75,
+  "gstars": 106.75,
+  "target_Omega_h2": 0.12,
+  "freezein": {
+    "TR_GeV": 1000000000000000.0
+  },
+  "topology": {
+    "ell": 0,
+    "kappa_a": 0.0,
+    "g5_X_sq": 0.0
+  },
+  "ell": 0,
+  "g5_X_sq": 0.0,
+  "kappa_a": 0.0
+}

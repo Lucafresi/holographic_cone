@@ -1,0 +1,13 @@
+{
+  "message": "Ledger incompleto per massa St\u00fcckelberg; compilare i campi mancanti e rilanciare.",
+  "missing_fields": [
+    "g5_X_sq",
+    "kappa_a",
+    "ell (integer non nullo)"
+  ],
+  "where_to_put_them": [
+    "/Users/lucafresi/code/olographic_cone/configs/two_group_ledger.json",
+    "/Users/lucafresi/code/olographic_cone/configs/u1x_2group.json"
+  ],
+  "copied_into_config": "/Users/lucafresi/code/olographic_cone/configs/dsector_freezein_topo_from_ledger.json"
+}

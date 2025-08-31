@@ -1,0 +1,13 @@
+{
+  "spin_X": "vector",
+  "m_X_GeV": 0.00010723458100768335,
+  "TR_input_GeV": 1000.0,
+  "Mpl_reduced_GeV": 2.435e+18,
+  "gstar": 106.75,
+  "gstars": 106.75,
+  "C_eff": 140.95416666666665,
+  "Y_infinity": 1.9912875911344055e-49,
+  "Omega_h2_at_TR_input": 5.859087742400796e-45,
+  "TR_required_for_target_Omega_h2": 2.736006226585949e+17,
+  "target_Omega_h2": 0.12
+}

@@ -1,0 +1,20 @@
+{
+  "UV_cutoff_GeV": 1000.0,
+  "checks": {
+    "scalar": {
+      "TR_req_GeV": 6.427697676163471e+17,
+      "TR_req / (1/z_UV)": 642769767616347.1,
+      "consistent (TR_req <= 1/z_UV)": false
+    },
+    "fermion": {
+      "TR_req_GeV": 4.460519150766628e+17,
+      "TR_req / (1/z_UV)": 446051915076662.8,
+      "consistent (TR_req <= 1/z_UV)": false
+    },
+    "vector": {
+      "TR_req_GeV": 2.736006226585949e+17,
+      "TR_req / (1/z_UV)": 273600622658594.9,
+      "consistent (TR_req <= 1/z_UV)": false
+    }
+  }
+}
