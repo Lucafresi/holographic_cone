@@ -1,0 +1,20 @@
+{
+  "source": "cert/DM/axion/axion_ew_rot.json",
+  "note": "Minimal, two-body decays only (\u03b3\u03b3, gg). PDG-like normalization.",
+  "fa_GeV": 1000000000000.0,
+  "ma_GeV": 1e-05,
+  "g_phys_GeV^-1": {
+    "g_agamma": 1.5373673547022884e-14,
+    "g_agg": 6.766631560495023e-13
+  },
+  "widths_GeV": {
+    "Gamma_gg": 1.821818887912143e-41,
+    "Gamma_gammagamma": 1.1755076584143268e-45,
+    "Gamma_tot": 1.8219364386779844e-41
+  },
+  "BR": {
+    "gg": 0.9999354803146004,
+    "gammagamma": 6.451968539952398e-05
+  },
+  "status": "PASS"
+}
