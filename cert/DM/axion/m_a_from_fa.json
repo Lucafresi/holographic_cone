@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "fa_GeV": 2.435e+18,
+  "ma_eV": 2.3408624229979466e-12,
+  "ma_GeV": 2.3408624229979466e-21,
+  "convention": "QCD axion: m_a \u2248 5.7 \u03bceV \u00d7 (1e12 GeV / f_a)"
+}

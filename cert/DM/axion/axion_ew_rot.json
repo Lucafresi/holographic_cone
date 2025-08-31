@@ -1,32 +1,32 @@
 {
-  "input_couplings_file": "cert/DM/axion/axion_couplings_norm.json",
-  "metrology_file": "cert/DM/metrology.json",
-  "sin2_thetaW": 0.23122,
-  "alpha_EM": 0.0072973525693,
-  "alpha_s": 0.1181,
+  "schema_version": 1,
+  "inputs": {
+    "source": "cert/DM/axion/axion_couplings.json",
+    "metrology": "cert/DM/metrology.json",
+    "alphaEM_inv": 137.035999084,
+    "alpha_s_mZ": 0.1181,
+    "sin2thetaW_mZ": 0.23122
+  },
+  "C_integer": {
+    "aGG": "36/1",
+    "aWW": "24/1",
+    "aYY": "10/1",
+    "aXXX": "45/1",
+    "agrav": "45/1"
+  },
   "C_rot": {
     "aGG": 36.0,
+    "a\u03b3\u03b3": 13.237080000000002,
+    "a\u03b3Z": 11.805157021166641,
+    "aZZ": 20.762920000000005,
     "aWW": 24.0,
     "aYY": 10.0,
-    "aagamma": 13.237080000000002,
-    "aZgamma": 11.805157021166641,
-    "aZZ": 20.762920000000005
+    "aXXX": 45.0,
+    "agrav": 45.0
   },
-  "g_hat": {
-    "aGG": 36.0,
-    "aWW": 24.0,
-    "aYY": 10.0,
-    "aagamma": 13.237080000000002,
-    "aZgamma": 11.805157021166641,
-    "aZZ": 20.762920000000005
-  },
+  "fa_GeV": 2.435e+18,
   "g_phys_GeV^-1": {
-    "g_agg": 6.766631560495023e-13,
-    "g_aWW": 2.7873833589322505e-14,
-    "g_aYY": 1.1614097328884378e-14,
-    "g_agamma": 1.5373673547022884e-14,
-    "g_aZgamma": 1.3710624262659214e-14,
-    "g_aZZ": 2.4114257371184007e-14
-  },
-  "fa_GeV": 1000000000000.0
+    "g_agamma": 6.3136236332602704e-21,
+    "g_agg": 2.7789041316201326e-19
+  }
 }

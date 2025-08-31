@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "charges_file": "dm_inputs/U1X_charges.json",
+    "brane_counts_file": "dm_inputs/brane_counts.json",
+    "norm_file": "cert/DM/axion/axion_norm.json"
+  },
+  "coeff_integer_basis": {
+    "aGG": "36/1",
+    "aWW": "24/1",
+    "aYY": "10/1",
+    "aXXX": "45/1",
+    "agrav": "45/1"
+  },
+  "f_a_hat": 1.0,
+  "g_hat": {
+    "aGG": 36.0,
+    "aWW": 24.0,
+    "aYY": 10.0,
+    "aXXX": 45.0,
+    "agrav": 45.0
+  },
+  "C_integer": {
+    "aGG": "36/1",
+    "aWW": "24/1",
+    "aYY": "10/1",
+    "aXXX": "45/1",
+    "agrav": "45/1"
+  }
+}
