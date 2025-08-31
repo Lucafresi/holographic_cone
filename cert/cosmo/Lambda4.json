@@ -1,16 +1,16 @@
 {
   "I_a2": 1.0,
-  "Q_inv_exact": "2",
-  "Q_inv_float": 2.0,
-  "Lambda4": 2.0,
+  "Q_inv_exact": "1",
+  "Q_inv_float": 1.0,
+  "Lambda4": 1.0,
   "breakdown": [
     {
       "name": "Z3_SPT",
-      "kappa": 2,
+      "kappa": 1,
       "mod": 3,
-      "kappa_eff": 2,
+      "kappa_eff": 1,
       "I": "1",
-      "contrib": "2"
+      "contrib": "1"
     },
     {
       "name": "U1_FF",

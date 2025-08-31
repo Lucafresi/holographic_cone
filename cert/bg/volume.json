@@ -1,1 +1,22 @@
-{ "I_a2": 1.0, "units": "M5^(-3) length" }
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T00:55:55.721237Z",
+  "input": {
+    "path": "cert/bg/a_profile.csv",
+    "format": "csv",
+    "sha256": "bc41d6b5c17c4e021ce2c9c9c9cf6d4fb496c3b1829a618f58d18673eae3d489",
+    "n_points": 2001,
+    "s_min": 0.0,
+    "s_max": 1.0
+  },
+  "checks": {
+    "monotone_S": true,
+    "a_nonneg": true,
+    "rel_err_est": 0.0,
+    "tol": 1e-12
+  },
+  "I_a2_exact": "1.0",
+  "I_a2_float": 1.0,
+  "I_a2": 1.0,
+  "pass": true
+}
