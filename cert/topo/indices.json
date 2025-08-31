@@ -1,0 +1,8 @@
+{
+  "indices": [
+    { "name": "Z3_SPT",    "I": 1 },
+    { "name": "U1_FF",     "I": 0 },
+    { "name": "U1_grav2",  "I": 0 },
+    { "name": "grav_CS5",  "I": 0 }
+  ]
+}

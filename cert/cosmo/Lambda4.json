@@ -1,0 +1,41 @@
+{
+  "I_a2": 1.0,
+  "Q_inv_exact": "2",
+  "Q_inv_float": 2.0,
+  "Lambda4": 2.0,
+  "breakdown": [
+    {
+      "name": "Z3_SPT",
+      "kappa": 2,
+      "mod": 3,
+      "kappa_eff": 2,
+      "I": "1",
+      "contrib": "2"
+    },
+    {
+      "name": "U1_FF",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    },
+    {
+      "name": "U1_grav2",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    },
+    {
+      "name": "grav_CS5",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    }
+  ],
+  "notes": "\u039b4 computed from discrete invariants only; independent of brane vacua (decoupling)."
+}

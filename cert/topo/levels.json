@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {
+      "name": "Z3_SPT",
+      "kappa": 1,
+      "mod": 3
+    },
+    {
+      "name": "U1_FF",
+      "kappa": 0,
+      "mod": null
+    },
+    {
+      "name": "U1_grav2",
+      "kappa": 0,
+      "mod": null
+    },
+    {
+      "name": "grav_CS5",
+      "kappa": 0,
+      "mod": null
+    }
+  ]
+}
