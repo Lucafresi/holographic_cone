@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:12:04.197594Z",
+  "inputs": {
+    "C2": {
+      "path": "cert/cosmo/C2_vector/C2_vector_cert.json",
+      "sha256": "4dfccd269f2e989c0c81834c16b39359b6c164f5f4aff6a08e7562a4f63269c9"
+    },
+    "vacA": {
+      "path": "cert/topo/brane_vacuum_A.json",
+      "sha256": "13a588320dbd4993186d50d74ffb419e5d8df82f46418d1c7249c6af5fc52287"
+    },
+    "vacB": {
+      "path": "cert/topo/brane_vacuum_B.json",
+      "sha256": "5ac47072a998a8479f7a2843527c8cfee0df19582b7c88b63b8bd12867723fa8"
+    }
+  },
+  "diagnostics": {
+    "delta_uniform_UV": 0.8811457877164051,
+    "delta_uniform_IR": 0.8811457877164051,
+    "g_vec": 0.0
+  },
+  "pass": true,
+  "note": "Shift uniforme \u21d2 nessuna sorgente vettoriale: g_vec=0 (ledger)."
+}

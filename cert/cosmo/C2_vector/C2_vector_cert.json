@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:12:04.176086Z",
+  "implemented_phys": true,
+  "ledger": {
+    "sigma_UV": -1,
+    "sigma_IR": 1,
+    "collar": "product",
+    "notes": "Formule collar vettoriali (EH+GHY); profilo a(S) da volume.json."
+  },
+  "inputs": {
+    "ops": {
+      "path": "tmp/vector_ops.npz",
+      "sha256": "f89230ee1863dc25eca6bba8fd2e6d8e6ce066dad2d7b161e814cc28f9497919"
+    },
+    "bg": {
+      "path": "cert/bg/volume.json",
+      "sha256": "4f52a4a0bf8b7b1fe7592519ca401c76e16eb971973a477f63367bd59577cff0"
+    },
+    "topo": {
+      "path": "cert/topo/levels.json",
+      "sha256": "b9a54f6b849e4cb6c9e1aca9f1a9ff85eff0fa6770da3b642c6aafbe5c048dea"
+    },
+    "indices": {
+      "path": "cert/topo/indices.json",
+      "sha256": "300677f36bff72cb6c31c02a5f497c78ee00712363dbf181eb1cf3c4603b0ba1"
+    }
+  },
+  "numbers": {
+    "Z_vec": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "M_vec2": {
+      "value": 0.0,
+      "err_est": 0.0
+    },
+    "c_T2": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "g_vec": {
+      "value": 0.0,
+      "err_est": 0.0
+    }
+  },
+  "checks": {
+    "Z_pos": true,
+    "M2_zero": true,
+    "cT2_unity": true,
+    "g_vec_zero": true
+  },
+  "PASS": true
+}
