@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "fa_GeV": 2.435e+18,
+    "theta_i_rad": 0.17453292519943295,
+    "ma_GeV": 1e-18,
+    "ma_source": "override_ma_GeV",
+    "metrology": {
+      "Mpl_reduced_GeV": 2.435e+18,
+      "rho_crit_over_h2_GeV_cm3": 1.05375e-05,
+      "s0_cm3": 2891.2,
+      "gstar_const": 3.36,
+      "gstarS_const": 3.91
+    }
+  },
+  "derived": {
+    "T_osc_GeV": 0.5164758178696242,
+    "Y": 3.821894634034814e+17
+  },
+  "Omega_h2": 104862270.61372674,
+  "notes": "Constant g*, g*S misalignment. No dilution, no anharmonicity."
+}

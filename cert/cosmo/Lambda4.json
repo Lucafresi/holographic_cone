@@ -1,14 +1,42 @@
 {
-  "schema_version": 1,
-  "inputs": {
-    "Omega_m0": 0.315,
-    "Omega_k0": 0.0,
-    "Omega_L0": 0.685,
-    "H0_km_s_Mpc": 67.4
-  },
-  "conversions": {
-    "H0_s^-1": 2.1842852410855023E-18,
-    "H0_GeV": 1.4377226629626767E-42
-  },
-  "Lambda4": 4.247780466250789E-84
+  "I_a2": 1.0,
+  "Q_inv_exact": "1",
+  "Q_inv_float": 1.0,
+  "Lambda4": 1.0,
+  "breakdown": [
+    {
+      "name": "Z3_SPT",
+      "kappa": 1,
+      "mod": 3,
+      "kappa_eff": 1,
+      "I": "1",
+      "contrib": "1"
+    },
+    {
+      "name": "U1_FF",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    },
+    {
+      "name": "U1_grav2",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    },
+    {
+      "name": "grav_CS5",
+      "kappa": 0,
+      "mod": null,
+      "kappa_eff": 0,
+      "I": "0",
+      "contrib": "0"
+    }
+  ],
+  "notes": "\u039b4 computed from discrete invariants only; independent of brane vacua (decoupling).",
+  "Q_inv": 1
 }

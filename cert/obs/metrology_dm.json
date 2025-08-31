@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "Mpl_reduced_GeV": 2.435e18,
+  "rho_crit_over_h2_GeV_cm3": 1.05375e-5,
+  "s0_cm3": 2891.2,
+  "gstar_const": 3.36,
+  "gstarS_const": 3.91
+}

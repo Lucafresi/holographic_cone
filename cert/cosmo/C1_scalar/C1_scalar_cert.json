@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2025-08-31T01:06:58.481894Z",
+  "generated_at": "2025-08-31T01:07:57.773599Z",
   "implemented_phys": true,
   "ledger": {
     "sigma_UV": -1,
@@ -11,7 +11,7 @@
   "inputs": {
     "ops": {
       "path": "tmp/scalar_ops.npz",
-      "sha256": "f6cbde377a6f1dfa39b03cf78f08575c716d77587fe439ca2dfbbdcfd6391958"
+      "sha256": "1017bd729e60e3b4df708874ee67fa8f8fffcd94404c8c9c33720304c69d2f00"
     },
     "bg": {
       "path": "cert/bg/volume.json",
