@@ -15,3 +15,24 @@ __pycache__/
 # build artifacts
 build/
 dist/
+# --- general junk ---
+.DS_Store
+.idea/
+.vscode/
+# venv & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.cache/
+# build/dist
+build/
+dist/
+*.egg-info/
+# notebooks
+.ipynb_checkpoints/
+# local scratch
+tmp/
+*.log

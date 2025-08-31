@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+import json, argparse, math
+
+def load(p):
+    with open(p,"r") as f: return json.load(f)
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ew", default="cert/DM/axion/axion_ew_rot.json")
+    ap.add_argument("--ma_GeV", type=float, default=None, help="massa dell'ALP in GeV")
+    ap.add_argument("--out", default="cert/DM/axion/axion_obs_min.json")
+    args = ap.parse_args()
+
+    ew = load(args.ew)
+    out = {"source": args.ew, "note": "Minimal, two-body decays only (γγ, gg). PDG-like normalization."}
+
+    if ("g_phys_GeV^-1" not in ew) or (args.ma_GeV is None):
+        out["status"] = "NOP"  # nessuna manopola introdotta automaticamente
+        with open(args.out,"w") as f: json.dump(out,f,indent=2)
+        print(f"[D3-OBS] wrote {args.out} (no m_a or no g_phys provided)")
+        return
+
+    g = ew["g_phys_GeV^-1"]
+    ma = float(args.ma_GeV)
+    # Γ(a→γγ) = g_{aγγ}^2 m_a^3 / (64π)
+    # Γ(a→gg) = g_{agg}^2 m_a^3 / (8π)
+    g_ag = float(g["g_agamma"])
+    g_gg = float(g["g_agg"])
+    pi = math.pi
+
+    G_gg   = (g_gg*g_gg) * (ma**3) / (8.0*pi)
+    G_gaga = (g_ag*g_ag) * (ma**3) / (64.0*pi)
+    G_tot  = G_gg + G_gaga
+
+    BR_gg   = G_gg/G_tot if G_tot>0 else 0.0
+    BR_gaga = G_gaga/G_tot if G_tot>0 else 0.0
+
+    out.update({
+        "fa_GeV": ew.get("fa_GeV","<unknown>"),
+        "ma_GeV": ma,
+        "g_phys_GeV^-1": {"g_agamma": g_ag, "g_agg": g_gg},
+        "widths_GeV": {"Gamma_gg": G_gg, "Gamma_gammagamma": G_gaga, "Gamma_tot": G_tot},
+        "BR": {"gg": BR_gg, "gammagamma": BR_gaga},
+        "status": "PASS"
+    })
+    with open(args.out,"w") as f: json.dump(out,f,indent=2)
+    print(f"[D3-OBS] wrote {args.out}")
+    print(f"  Gamma_tot = {G_tot:.6e} GeV  | BR(γγ)={BR_gaga:.3f}, BR(gg)={BR_gg:.3f}")
+if __name__ == "__main__":
+    main()
