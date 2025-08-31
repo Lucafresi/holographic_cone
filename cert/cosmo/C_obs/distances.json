@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "Hcurve_json": "cert/cosmo/C_obs/H_curve.json",
+    "Hcurve_csv": "cert/cosmo/C_obs/H_curve.csv"
+  },
+  "H0_km_s_Mpc": 67.40310355772421,
+  "eps": {},
+  "metrology": {
+    "c_km_s": 299792.458
+  },
+  "checks": {
+    "etherington_max_rel_err": 2.740430743600103e-16,
+    "etherington_pass": true,
+    "lowz_slope_rel_err": 0.0009159762895922153,
+    "lowz_pass": true
+  },
+  "pass": true
+}

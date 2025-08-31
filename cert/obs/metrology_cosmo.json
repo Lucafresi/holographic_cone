@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "T_CMB_K": 2.7255,
+  "N_eff": 3.044,
+  "Tnu_over_Tgamma": 0.713766,
+  "hbar_GeVs": 6.582119569e-25,
+  "Mpc_km": 3.0856775814913673e19
+}
