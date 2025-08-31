@@ -1,0 +1,13 @@
+{
+  "spin_X": "fermion",
+  "m_X_GeV": 0.00010723458100768335,
+  "TR_input_GeV": 1000000000000000.0,
+  "Mpl_reduced_GeV": 2.435e+18,
+  "gstar": 106.75,
+  "gstars": 106.75,
+  "C_eff": 32.52916666666667,
+  "Y_infinity": 4.595460174402527e-14,
+  "Omega_h2_at_TR_input": 1.3521504627663551e-09,
+  "TR_required_for_target_Omega_h2": 4.460519150766628e+17,
+  "target_Omega_h2": 0.12
+}

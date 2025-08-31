@@ -1,0 +1,13 @@
+{
+  "Mpl_reduced_GeV": 2.435e+18,
+  "gstar": 106.75,
+  "gstars": 106.75,
+  "target_Omega_h2": 0.12,
+  "dark_state": {
+    "spin": "vector",
+    "mass_GeV": 0.00010723458100768335
+  },
+  "freezein": {
+    "TR_GeV": 1000000000000000.0
+  }
+}
