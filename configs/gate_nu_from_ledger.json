@@ -1,0 +1,26 @@
+{
+  "geometry": {
+    "L": 1.0,
+    "z_UV": 0.001,
+    "z_IR": 9325.35
+  },
+  "fermion": {
+    "c": 0.6,
+    "alpha_UV": 0.0,
+    "alpha_IR": Infinity
+  },
+  "fermion_L": {
+    "c": 0.55,
+    "alpha_UV": 0.0,
+    "alpha_IR": 0.0,
+    "zero_kind": "L"
+  },
+  "sm": {
+    "z_H": "UV",
+    "lambda_B": 1.0,
+    "sterile_chirality_at_brane": "L"
+  },
+  "grid": {
+    "N": 401
+  }
+}

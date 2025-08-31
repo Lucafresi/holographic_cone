@@ -1,0 +1,890 @@
+{
+  "summary": {
+    "L": {
+      "chosen": 1.0,
+      "frequency": 6,
+      "candidates": [
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "float",
+          "file": "scripts/gate_nu_run.py",
+          "line": 24,
+          "context": "L      = float(cfg[\"geometry\"][\"L\"])"
+        },
+        {
+          "value": "L",
+          "file": "scripts/gate_nu_run.py",
+          "line": 56,
+          "context": "fL_s, fR_s, _ = normalize_mode(fL_s, fR_s, z_grid, w, L=L)"
+        }
+      ]
+    },
+    "z_UV": {
+      "chosen": 0.001,
+      "frequency": 6,
+      "candidates": [
+        {
+          "value": 0.001,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.001,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.001,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.001,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.001,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.001,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "float",
+          "file": "scripts/gate_nu_run.py",
+          "line": 25,
+          "context": "z_UV   = float(cfg[\"geometry\"][\"z_UV\"])"
+        }
+      ]
+    },
+    "z_IR": {
+      "chosen": 9325.35,
+      "frequency": 5,
+      "candidates": [
+        {
+          "value": 9325.35,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 9325.35,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 9325.35,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 9325.35,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 9325.35,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "float",
+          "file": "scripts/gate_nu_run.py",
+          "line": 26,
+          "context": "z_IR   = float(cfg[\"geometry\"][\"z_IR\"])"
+        }
+      ]
+    },
+    "c_s": {
+      "chosen": 0.6,
+      "frequency": 5,
+      "candidates": [
+        {
+          "value": 0.6,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.6,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.6,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.6,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.7,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.6,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "float",
+          "file": "scripts/gate_nu_run.py",
+          "line": 29,
+          "context": "c_s    = float(cfg[\"fermion\"][\"c\"])"
+        }
+      ]
+    },
+    "alpha_UV_s": {
+      "chosen": 0.0,
+      "frequency": 6,
+      "candidates": [
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "alpha_IR_s": {
+      "chosen": Infinity,
+      "frequency": 3,
+      "candidates": [
+        {
+          "value": "inf",
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "inf",
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "inf",
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "c_L": {
+      "chosen": 0.55,
+      "frequency": 2,
+      "candidates": [
+        {
+          "value": 0.55,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.55,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "float",
+          "file": "scripts/gate_nu_run.py",
+          "line": 34,
+          "context": "c_L    = float(cfg[\"fermion_L\"][\"c\"])"
+        }
+      ]
+    },
+    "alpha_UV_L": {
+      "chosen": 0.0,
+      "frequency": 2,
+      "candidates": [
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "alpha_IR_L": {
+      "chosen": 0.0,
+      "frequency": 2,
+      "candidates": [
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 0.0,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "zero_kind_L": {
+      "chosen": "L",
+      "frequency": 2,
+      "candidates": [
+        {
+          "value": "L",
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "L",
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "z_H": {
+      "chosen": "UV",
+      "frequency": 3,
+      "candidates": [
+        {
+          "value": "UV",
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "IR",
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "UV",
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "UV",
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "IR",
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "IR",
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "z_UV",
+          "file": "scripts/gate_nu_run.py",
+          "line": 44,
+          "context": "z_H = z_UV if zH_loc.upper()==\"UV\" else z_IR"
+        }
+      ]
+    },
+    "lambda_B": {
+      "chosen": 1.0,
+      "frequency": 5,
+      "candidates": [
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 3.0,
+          "file": "configs/gate_nu_7keV_robin.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_min.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_7keV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/SWEEP.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": 1.0,
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    },
+    "sterile_chirality_at_brane": {
+      "chosen": "L",
+      "frequency": 1,
+      "candidates": [
+        {
+          "value": "L",
+          "file": "configs/gate_nu_ledger_UV.json",
+          "line": null,
+          "context": null
+        },
+        {
+          "value": "R",
+          "file": "configs/gate_nu_ledger_IR.json",
+          "line": null,
+          "context": null
+        }
+      ]
+    }
+  },
+  "candidates": {
+    "L": [
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "float",
+        "file": "scripts/gate_nu_run.py",
+        "line": 24,
+        "context": "L      = float(cfg[\"geometry\"][\"L\"])"
+      },
+      {
+        "value": "L",
+        "file": "scripts/gate_nu_run.py",
+        "line": 56,
+        "context": "fL_s, fR_s, _ = normalize_mode(fL_s, fR_s, z_grid, w, L=L)"
+      }
+    ],
+    "z_UV": [
+      {
+        "value": 0.001,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.001,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.001,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.001,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.001,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.001,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "float",
+        "file": "scripts/gate_nu_run.py",
+        "line": 25,
+        "context": "z_UV   = float(cfg[\"geometry\"][\"z_UV\"])"
+      }
+    ],
+    "z_IR": [
+      {
+        "value": 9325.35,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 9325.35,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 9325.35,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 9325.35,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 9325.35,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "float",
+        "file": "scripts/gate_nu_run.py",
+        "line": 26,
+        "context": "z_IR   = float(cfg[\"geometry\"][\"z_IR\"])"
+      }
+    ],
+    "c_s": [
+      {
+        "value": 0.6,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.6,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.6,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.6,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.7,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.6,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "float",
+        "file": "scripts/gate_nu_run.py",
+        "line": 29,
+        "context": "c_s    = float(cfg[\"fermion\"][\"c\"])"
+      }
+    ],
+    "alpha_UV_s": [
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "alpha_IR_s": [
+      {
+        "value": "inf",
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "inf",
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "inf",
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "c_L": [
+      {
+        "value": 0.55,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.55,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "float",
+        "file": "scripts/gate_nu_run.py",
+        "line": 34,
+        "context": "c_L    = float(cfg[\"fermion_L\"][\"c\"])"
+      }
+    ],
+    "alpha_UV_L": [
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "alpha_IR_L": [
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 0.0,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "zero_kind_L": [
+      {
+        "value": "L",
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "L",
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "z_H": [
+      {
+        "value": "UV",
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "IR",
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "UV",
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "UV",
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "IR",
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "IR",
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "z_UV",
+        "file": "scripts/gate_nu_run.py",
+        "line": 44,
+        "context": "z_H = z_UV if zH_loc.upper()==\"UV\" else z_IR"
+      }
+    ],
+    "lambda_B": [
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 3.0,
+        "file": "configs/gate_nu_7keV_robin.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_min.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_7keV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/SWEEP.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": 1.0,
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ],
+    "sterile_chirality_at_brane": [
+      {
+        "value": "L",
+        "file": "configs/gate_nu_ledger_UV.json",
+        "line": null,
+        "context": null
+      },
+      {
+        "value": "R",
+        "file": "configs/gate_nu_ledger_IR.json",
+        "line": null,
+        "context": null
+      }
+    ]
+  }
+}

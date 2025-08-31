@@ -2,3 +2,16 @@ __pycache__/
 *.npz
 tmp/
 .DS_Store
+# venv & cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# notebook checkpoints
+.ipynb_checkpoints/
+
+# build artifacts
+build/
+dist/

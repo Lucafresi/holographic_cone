@@ -1,0 +1,6 @@
+{
+  "geometry": { "L": 1.0, "z_UV": 0.001, "z_IR": 1.0 },
+  "fermion":  { "c": 0.6, "alpha_UV": 0.0, "alpha_IR": 1.0 },
+  "sm":       { "z_H": "UV", "lambda_B": 1.0, "sterile_chirality": "R" },
+  "grid":     { "N": 401 }
+}
