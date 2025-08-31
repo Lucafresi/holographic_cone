@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:03:48.127727Z",
+  "implemented_phys": false,
+  "inputs": {
+    "ops": {
+      "path": "tmp/scalar_ops.npz",
+      "sha256": "df4e62f14a5004d3307b8b0f947b0d1d3f97d3f4bdc93c982148c9908834e097"
+    },
+    "bg": {
+      "path": "cert/bg/volume.json",
+      "sha256": "4f52a4a0bf8b7b1fe7592519ca401c76e16eb971973a477f63367bd59577cff0"
+    },
+    "topo": {
+      "path": "cert/topo/levels.json",
+      "sha256": "b9a54f6b849e4cb6c9e1aca9f1a9ff85eff0fa6770da3b642c6aafbe5c048dea"
+    },
+    "indices": {
+      "path": "cert/topo/indices.json",
+      "sha256": "300677f36bff72cb6c31c02a5f497c78ee00712363dbf181eb1cf3c4603b0ba1"
+    }
+  },
+  "numbers": {
+    "Z_rad": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "M_rad2": {
+      "value": 0.0,
+      "err_est": 0.0
+    },
+    "c_s2": {
+      "value": 1.0,
+      "err_est": 0.0
+    },
+    "g_rad": {
+      "value": 0.0,
+      "err_est": null
+    }
+  },
+  "checks": {
+    "Z_pos": true,
+    "M2_nonneg": true,
+    "cs2_in_0_1": true,
+    "ward_match": null
+  },
+  "PASS": true,
+  "meta": {
+    "profile_sha256": "bc41d6b5c17c4e021ce2c9c9c9cf6d4fb496c3b1829a618f58d18673eae3d489",
+    "n_points": 2001,
+    "S_range": [
+      0.0,
+      1.0
+    ]
+  }
+}

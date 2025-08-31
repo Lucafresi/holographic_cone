@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:03:48.153510Z",
+  "implemented": false,
+  "inputs": {
+    "C0": {
+      "path": "cert/cosmo/Lambda4.json",
+      "sha256": "e603209f9187732e4e9a48be7efc87de6eb2a05fd17e37206cb2ba28f41cc44b"
+    },
+    "C1": {
+      "path": "cert/cosmo/C1_scalar/C1_scalar_cert.json",
+      "sha256": "e69eaa7307124d67dc4cdc42f1a6aff1cf684232f3adfa302cb8d72f3ac9b875"
+    }
+  },
+  "numbers": {
+    "Lambda4": 1.0,
+    "g_rad": 0.0
+  },
+  "pass": null,
+  "note": "Skeleton: implementare \u03b4\u039b4 + g_rad \u03b4\u03c6_bdry \u2248 0 con deformazioni ammesse (ledger)."
+}
