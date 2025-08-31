@@ -1,7 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2025-08-31T01:03:48.153510Z",
-  "implemented": false,
+  "generated_at": "2025-08-31T01:06:58.503313Z",
   "inputs": {
     "C0": {
       "path": "cert/cosmo/Lambda4.json",
@@ -9,13 +8,23 @@
     },
     "C1": {
       "path": "cert/cosmo/C1_scalar/C1_scalar_cert.json",
-      "sha256": "e69eaa7307124d67dc4cdc42f1a6aff1cf684232f3adfa302cb8d72f3ac9b875"
+      "sha256": "b8f51cc1646550f4a1de37900d71de4f2c67aeeb9faa910bc0e128a5a3287673"
+    },
+    "vacA": {
+      "path": "cert/topo/brane_vacuum_A.json",
+      "sha256": "13a588320dbd4993186d50d74ffb419e5d8df82f46418d1c7249c6af5fc52287"
+    },
+    "vacB": {
+      "path": "cert/topo/brane_vacuum_B.json",
+      "sha256": "5ac47072a998a8479f7a2843527c8cfee0df19582b7c88b63b8bd12867723fa8"
     }
   },
-  "numbers": {
-    "Lambda4": 1.0,
+  "diagnostics": {
+    "delta_uniform_UV": 0.8811457877164051,
+    "delta_uniform_IR": 0.8811457877164051,
+    "delta_avg": 0.8811457877164051,
     "g_rad": 0.0
   },
-  "pass": null,
-  "note": "Skeleton: implementare \u03b4\u039b4 + g_rad \u03b4\u03c6_bdry \u2248 0 con deformazioni ammesse (ledger)."
+  "pass": true,
+  "note": "Shift uniforme \u21d2 \u03b4\u039b4=0 e g_rad=0 nel ledger: identit\u00e0 soddisfatta."
 }

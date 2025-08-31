@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2025-08-31T01:03:48.127727Z",
-  "implemented_phys": false,
+  "generated_at": "2025-08-31T01:06:58.481894Z",
+  "implemented_phys": true,
+  "ledger": {
+    "sigma_UV": -1,
+    "sigma_IR": 1,
+    "collar": "product",
+    "notes": "Formule collar L1\u2013L2 applicate (EH+GHY); profilo a(S) da volume.json."
+  },
   "inputs": {
     "ops": {
       "path": "tmp/scalar_ops.npz",
-      "sha256": "df4e62f14a5004d3307b8b0f947b0d1d3f97d3f4bdc93c982148c9908834e097"
+      "sha256": "f6cbde377a6f1dfa39b03cf78f08575c716d77587fe439ca2dfbbdcfd6391958"
     },
     "bg": {
       "path": "cert/bg/volume.json",
@@ -35,22 +41,14 @@
     },
     "g_rad": {
       "value": 0.0,
-      "err_est": null
+      "err_est": 0.0
     }
   },
   "checks": {
     "Z_pos": true,
-    "M2_nonneg": true,
-    "cs2_in_0_1": true,
-    "ward_match": null
+    "M2_zero": true,
+    "cs2_unity": true,
+    "g_rad_zero": true
   },
-  "PASS": true,
-  "meta": {
-    "profile_sha256": "bc41d6b5c17c4e021ce2c9c9c9cf6d4fb496c3b1829a618f58d18673eae3d489",
-    "n_points": 2001,
-    "S_range": [
-      0.0,
-      1.0
-    ]
-  }
+  "PASS": true
 }
