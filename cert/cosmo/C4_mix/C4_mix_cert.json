@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "generated_at": "2025-08-31T01:18:14.431130Z",
+  "implemented_phys": true,
+  "ledger": {
+    "sigma_UV": -1,
+    "sigma_IR": 1,
+    "collar": "product",
+    "notes": "Mixing FRW: block-diagonal a livello lineare; uniform-vac Ward."
+  },
+  "inputs": {
+    "C1": {
+      "path": "cert/cosmo/C1_scalar/C1_scalar_cert.json",
+      "sha256": "da7962722d98a77b5cfce61a2653b788351f0b4a90b7f80a299fcecdda67dd80"
+    },
+    "C2": {
+      "path": "cert/cosmo/C2_vector/C2_vector_cert.json",
+      "sha256": "4dfccd269f2e989c0c81834c16b39359b6c164f5f4aff6a08e7562a4f63269c9"
+    },
+    "C3": {
+      "path": "cert/cosmo/C3_tensor/C3_tensor_cert.json",
+      "sha256": "7069213f042173f4ac4ca5fc79e104d975d07a4f540d464d8ba920702c2bd22b"
+    }
+  },
+  "numbers": {
+    "Z": {
+      "scalar": 1.0,
+      "vector": 1.0,
+      "tensor": 1.0
+    },
+    "M2": {
+      "scalar": 0.0,
+      "vector": 0.0,
+      "tensor": 0.0
+    },
+    "c2": {
+      "scalar": 1.0,
+      "vector": 1.0,
+      "tensor": 1.0
+    },
+    "g": {
+      "scalar": 0.0,
+      "vector": 0.0,
+      "tensor": 0.0
+    },
+    "mix": {
+      "rad_vec": 0.0,
+      "rad_tensor": 0.0,
+      "vec_tensor": 0.0
+    }
+  },
+  "checks": {
+    "Z_rad_pos": true,
+    "Z_vec_pos": true,
+    "Z_ten_pos": true,
+    "M_rad2_ge0": true,
+    "M_vec2_ge0": true,
+    "M_ten2_ge0": true,
+    "c_s2_unit": true,
+    "c_T2_unit": true,
+    "c_GW2_unit": true,
+    "g_rad_zero": true,
+    "g_vec_zero": true,
+    "g_tensor_zero": true,
+    "mix_rad_vec_zero": true,
+    "mix_rad_tensor_zero": true,
+    "mix_vec_tensor_zero": true
+  },
+  "PASS": true
+}
