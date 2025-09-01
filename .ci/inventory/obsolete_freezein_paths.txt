@@ -1,0 +1,16 @@
+cert/dsector_freezein/consistency_freezein_vs_cutoff.json
+cert/dsector_freezein/result_dsector_freezein_fermion_from_ledger.json
+cert/dsector_freezein/result_dsector_freezein_scalar_from_ledger.json
+cert/dsector_freezein/result_dsector_freezein_topo_from_ledger.json
+cert/dsector_freezein/result_dsector_freezein_vector_TReq_UV.json
+cert/dsector_freezein/result_dsector_freezein_vector_from_ledger.json
+cert/dsector_freezein/topo_anoms.json
+cert/dsector_freezein/topo_missing.json
+cert/dsector_freezein/verdetto_freezein_vs_cutoff.json
+configs/dsector_freezein_fermion_from_ledger.json
+configs/dsector_freezein_scalar_from_ledger.json
+configs/dsector_freezein_topo_from_ledger.json
+configs/dsector_freezein_vector_TReq_UV.json
+configs/dsector_freezein_vector_from_ledger.json
+docs/dm_freezein_no-go.md
+src/dsector/freezein.py
