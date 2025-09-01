@@ -213,3 +213,15 @@ __marimo__/
 # bytecode
 __pycache__/
 *.pyc
+
+.venv/
+venv/
+.idea/
+__pycache__/
+.DS_Store
+node_modules/
+dist/
+build/
+.ipynb_checkpoints/
+tmp/
+.ci/

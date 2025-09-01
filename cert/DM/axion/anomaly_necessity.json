@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "sigma": {
+    "UV": -1,
+    "IR": 1
+  },
+  "inputs": {
+    "charges_file": "dm_inputs/U1X_charges.json",
+    "brane_counts_file": "dm_inputs/brane_counts.json"
+  },
+  "anomalies": {
+    "UV": {
+      "SU3^2_U1X": "12/1",
+      "SU2^2_U1X": "12/1",
+      "U1Y^2_U1X": "10/1",
+      "U1X^3": "45/1",
+      "grav^2_U1X": "45/1"
+    },
+    "IR": {
+      "SU3^2_U1X": "0/1",
+      "SU2^2_U1X": "0/1",
+      "U1Y^2_U1X": "0/1",
+      "U1X^3": "0/1",
+      "grav^2_U1X": "0/1"
+    }
+  },
+  "channel_constraints": {
+    "sum_zero_condition": {
+      "SU2^2_U1X": false,
+      "SU3^2_U1X": false,
+      "U1X^3": false,
+      "U1Y^2_U1X": false,
+      "grav^2_U1X": false
+    },
+    "k_integer_if_sum_zero": {}
+  },
+  "solvable_by_CS_only": false,
+  "gs_required": true,
+  "explanation": "Solvable_by_CS_only richiede A_UV + A_IR = 0 per ogni canale e k intero unico per canale. Se fallisce, non esiste un singolo livello CS 5D che cancelli le anomalie su entrambe le brane; senza aggiungere materia 4D (vietato da NFF), \u00e8 richiesto un termine di tipo Green\u2013Schwarz (assione) o equivalente."
+}
