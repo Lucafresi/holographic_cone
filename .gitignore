@@ -225,3 +225,9 @@ build/
 .ipynb_checkpoints/
 tmp/
 .ci/
+
+# Cert outputs to (re)generate only after UV derivations
+cert/DM/axion/scan/
+cert/cosmo/C_obs/*.csv
+cert/cosmo/C_obs/H_curve.json
+cert/cosmo/C_obs/distances.json
