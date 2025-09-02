@@ -1,0 +1,16 @@
+{
+  "input_yaml": "models/sm_uv_UNIQUE.yaml",
+  "b2": 4,
+  "rank_B_over_Q": 3,
+  "kernel_dim": 1,
+  "kernel_generators": [
+    [
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "pass": true,
+  "method": "rational-rank + integerized-nullspace"
+}

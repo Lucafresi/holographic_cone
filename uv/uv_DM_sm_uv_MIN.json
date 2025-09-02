@@ -1,0 +1,27 @@
+{
+  "input_yaml": "models/sm_uv_MIN.yaml",
+  "coeffs": [
+    1,
+    0,
+    0
+  ],
+  "k": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "charges_DM": {
+    "Q": 1,
+    "uR": -1,
+    "dR": -1,
+    "L": 0,
+    "eR": 0,
+    "NR": 0,
+    "H": 0
+  },
+  "checks": {
+    "ker": true,
+    "yukawa_invariant": true
+  }
+}

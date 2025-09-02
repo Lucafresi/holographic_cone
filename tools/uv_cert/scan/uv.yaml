@@ -1,0 +1,10 @@
+field_order: [Q,uR,dR,L,eR,NR,H]
+yukawa_active: [LeH,QdH,QuH]
+majorana: []
+b2: 2
+CdotGG:
+  - [2]
+  - [2]
+L:
+  - [2]
+  - [2]
