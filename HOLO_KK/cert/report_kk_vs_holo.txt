@@ -1,0 +1,18 @@
+FILE_KK HOLO_KK/KK/cert_kk/fit_gateE.json
+SHA256_KK 42064537445b2c3a75d8fe24ad5f4bcf2eb90ae6065b2c22fafa7f99e37105ed
+FILE_HOLO HOLO_KK/HOLO/cert_holo/fit_gateE.json
+SHA256_HOLO 5e58e0a9527a34b1b0a6de5bca00be21c82756481304ab5cda173f92b51c022e
+GIT_COMMIT b0b39a3+dirty
+PYTHON 3.11.9
+PLATFORM macOS-15.5-arm64-arm-64bit
+THRESHOLDS alpha|C_log abs<=5.0e-10 rel<=5.0e-10 ; other abs<=1.0e-12 rel<=1.0e-09
+CHECKS
+alpha                kk=-0.2500000000485771  holo=-0.24999999995142141 diff_abs/diff_rel=9.716e-11/9.716e-11      PASS
+C_log                kk=-0.12500000002428854 holo=-0.12499999997571071 diff_abs/diff_rel=4.858e-11/4.858e-11      PASS
+OTHER_NUMERIC_KEYS
+C_log_th             kk=-0.125               holo=-0.125               diff_abs/diff_rel=0.000e+00/0.000e+00      PASS
+K                    kk=9                    holo=9                    diff_abs/diff_rel=0.000e+00/0.000e+00      PASS
+alpha_th             kk=-0.25                holo=-0.25                diff_abs/diff_rel=0.000e+00/0.000e+00      PASS
+eta                  kk=0.1                  holo=0.1                  diff_abs/diff_rel=0.000e+00/0.000e+00      PASS
+prec                 kk=160                  holo=160                  diff_abs/diff_rel=0.000e+00/0.000e+00      PASS
+VERDETTO PASS
