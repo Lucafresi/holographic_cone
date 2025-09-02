@@ -213,3 +213,4 @@ __marimo__/
 # bytecode
 __pycache__/
 *.pyc
+.idea/
