@@ -1,12 +1,11 @@
-gens: 3
-branes:
-  UV:
-    sign: +1
-    yukawas: [LeH, QdH, QuH]
-  IR:
-    sign: -1
-    yukawas: [LeH, QdH, QuH]
-# L forza rank pieno (4x3)
+field_order: [Q,uR,dR,L,eR,NR,H]
+yukawa_active: [LeH,QdH,QuH]
+majorana: []
+CdotGG:
+  - [0, 0]
+  - [0, 0]
+  - [0, 0]
+  - [6, 8]
 L:
   - [1, 0, 0]
   - [0, 1, 0]
