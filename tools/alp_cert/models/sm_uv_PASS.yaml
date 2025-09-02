@@ -1,9 +1,0 @@
-gens: 3
-branes:
-  UV:
-    sign: +1
-    yukawas: [LeH, QdH, QuH]
-  IR:
-    sign: -1
-    yukawas: [LeH, QdH, QuH]
-# Nessun L → solo inflow C·GG

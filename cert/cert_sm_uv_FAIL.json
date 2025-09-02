@@ -1,9 +1,0 @@
-{
-  "input_yaml": "models/sm_uv_FAIL_with_L.yaml",
-  "b2": 4,
-  "rank_B_over_Q": 4,
-  "kernel_dim": 0,
-  "kernel_generators": [],
-  "pass": false,
-  "method": "rational-rank + integerized-nullspace"
-}
