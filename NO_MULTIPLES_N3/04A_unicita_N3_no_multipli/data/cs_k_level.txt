@@ -1,0 +1,4 @@
+k_integer=3
+ell_mod6=3
+congruence_check=UNKNOWN
+derivation_log=collar_calc_YYYYMMDD_HHMMSS.txt

@@ -1,0 +1,43 @@
+{
+  "forced_k_abs": 9,
+  "unsat_core": [
+    "inflow_link",
+    "fedele_IR",
+    "mod2_target",
+    "fedele_UV",
+    "cterms_lock",
+    "mod3_target"
+  ],
+  "minimality_check": {
+    "remove_each_then_sat": true,
+    "trials": [
+      {
+        "remove": "inflow_link",
+        "satisfiable": true
+      },
+      {
+        "remove": "fedele_IR",
+        "satisfiable": true
+      },
+      {
+        "remove": "mod2_target",
+        "satisfiable": true
+      },
+      {
+        "remove": "fedele_UV",
+        "satisfiable": true
+      },
+      {
+        "remove": "cterms_lock",
+        "satisfiable": true
+      },
+      {
+        "remove": "mod3_target",
+        "satisfiable": true
+      }
+    ]
+  },
+  "hash": "sha256:ccb69d92c5f721c418c71fdd74c1c6e8e27678568a8c1bea81658794671c28f9",
+  "timestamp": "2025-09-08T23:41:08Z",
+  "logs": []
+}

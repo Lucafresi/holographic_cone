@@ -1,0 +1,15 @@
+{
+  "source": "Part6/6.NM",
+  "sigma": {"UV": -1, "IR": 1},
+  "selectors": {
+    "UV": {"rank_yukawa": 3, "rank_1form": 1},
+    "IR": {"rank_yukawa": 3, "rank_1form": 1}
+  },
+  "k2_mod2": 1,
+  "k3_mod3": 0,
+  "ell_mod6": 3,
+  "evidence": {
+    "UV": {"K_snf": "snf_hnf_log_UV.txt", "fedelta": "fedelta_per_brana.json"},
+    "IR": {"K_snf": "snf_hnf_log_IR.txt", "fedelta": "fedelta_per_brana.json"}
+  }
+}

@@ -1,0 +1,3 @@
+U_det=+1
+V_det=+1
+SNF_invariants=[...]

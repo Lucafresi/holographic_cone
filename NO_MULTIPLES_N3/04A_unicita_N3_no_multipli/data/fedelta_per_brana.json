@@ -1,0 +1,4 @@
+{
+  "UV": {"rank_yukawa": 3, "rank_1form": 1, "independence_checks": true},
+  "IR": {"rank_yukawa": 3, "rank_1form": 1, "independence_checks": true}
+}

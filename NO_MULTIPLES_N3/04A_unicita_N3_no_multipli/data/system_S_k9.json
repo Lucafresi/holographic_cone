@@ -1,0 +1,106 @@
+{
+  "forced_k_abs": 9,
+  "sigma": {
+    "UV": -1,
+    "IR": 1
+  },
+  "constraints": [
+    {
+      "id": "inflow_link",
+      "type": "link_mod2_mod3",
+      "brane": "both",
+      "class": "omega5_Z6_generator",
+      "order": 6,
+      "non_split": true,
+      "evidence": [
+        "ledger_omega5_ref"
+      ]
+    },
+    {
+      "id": "mod2_target",
+      "type": "cancel_mod2",
+      "brane": "both",
+      "target_multiple": 3,
+      "domain_eps": [
+        "+1/2",
+        "-1/2",
+        "+1/6",
+        "-1/6"
+      ],
+      "evidence": [
+        "crt_level.json"
+      ]
+    },
+    {
+      "id": "mod3_target",
+      "type": "cancel_mod3",
+      "brane": "both",
+      "target_multiple": 3,
+      "domain_eps": [
+        "+1/3",
+        "-1/3",
+        "+1/6",
+        "-1/6"
+      ],
+      "evidence": [
+        "crt_level.json"
+      ]
+    },
+    {
+      "id": "integrality_UV",
+      "type": "integrality_snf_hnf",
+      "brane": "UV",
+      "log": "snf_hnf_log_UV.txt",
+      "unimodular": true
+    },
+    {
+      "id": "integrality_IR",
+      "type": "integrality_snf_hnf",
+      "brane": "IR",
+      "log": "snf_hnf_log_IR.txt",
+      "unimodular": true
+    },
+    {
+      "id": "fedele_UV",
+      "type": "fidelity",
+      "brane": "UV",
+      "rank_yukawa": 3,
+      "rank_1form": 1,
+      "evidence": [
+        "fedelta_per_brana.json"
+      ]
+    },
+    {
+      "id": "fedele_IR",
+      "type": "fidelity",
+      "brane": "IR",
+      "rank_yukawa": 3,
+      "rank_1form": 1,
+      "evidence": [
+        "fedelta_per_brana.json"
+      ]
+    },
+    {
+      "id": "no_extra_4D",
+      "type": "no_extra_4D_channels",
+      "files": [
+        "09_libero_bloccato",
+        "13_interfacce_sm"
+      ],
+      "proof": "no_extra_4D_proof.txt"
+    },
+    {
+      "id": "cterms_lock",
+      "type": "cterms_domain_lock",
+      "allowed": [
+        "+1/2",
+        "-1/2",
+        "+1/3",
+        "-1/3",
+        "+1/6",
+        "-1/6"
+      ],
+      "lockfile": "cterms_domain.lock"
+    }
+  ]
+}
