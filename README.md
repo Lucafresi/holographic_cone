@@ -502,3 +502,50 @@ Output atteso (estratto):
 Interpretazione. La dinamica “IR che scivola” è compatibile con il vincolo di scala:
 il lato sinistro (derivata numerica dξ/dt usando Richardson) coincide con il lato destro
 (forma analitica della Ward identity) al livello di 1e−12. Nessun parametro ad hoc.
+
+
+
+
+
+
+
+
+
+
+## COSMO_C0 — FRW ab-initio dal 5D (C_bg + C_obs + C_fit)
+Obiettivo. Validare il background cosmologico FRW derivato da 5D EH+GHY+brane SM senza manopole:
+```C_bg```: Friedmann da Israel+Brown-York; C=0 per vuoto regolare; irrilevanza $\rho^2/(2\sigma)$ post-BBN; No-Go $\Lambda$–KK rispettato.
+   ```C\_obs```: $H(z)$, $D_L(z)$, $D_A(z)$; Etherington e limite low-z certificati.
+```C_fit```: confronto osservativo severo (SNe Ia Union2.1, intercetta marginalizzata analiticamente; opzionale $ H_0 $/BAO/CMB-late).
+Certificati (cartella ```cert_c0/```):
+```
+H_curve.csv, distances.csv
+C_obs_report.json → PASS Etherington & low-z
+C_fit_report.json → $ \chi^2/\nu \approx 0.975 $ (PASS)
+SEAL.json → hash SHA-256, versioni pacchetti, p-value, PASS_ALL
+```
+Riproduzione (terminal-only)
+```
+# Setup ambiente virtuale e installazione dipendenze
+python3 -m venv .venv && source .venv/bin/activate
+python -m pip install -r requirements.txt
+
+# Calcolo di H(z) e delle distanze
+python bin/cobs_hz.py cert/cosmo/Lambda4.json cert/obs/matter_EH.json cert_c0/H_curve.csv
+python bin/cobs_distances.py cert_c0/H_curve.csv cert/obs/matter_EH.json cert_c0/distances.csv cert_c0/C_obs_report.json
+
+# Preparazione dati SNe (Union2.1)
+mkdir -p data
+curl -L 'https://supernova.lbl.gov/Union/figures/SCPUnion2.1_mu_vs_z.txt' -o data/Union2_1_mu_vs_z.txt
+python bin/make_sne_csv.py
+
+# Configurazione del fit (puoi aggiungere h0_csv/bao_csv/cmb_csv)
+cat > cert/obs/cfit_config.json << 'JSON'
+{"sne_csv":"data/sne.csv"}
+JSON
+
+# Esecuzione del fit e creazione del sigillo di certificazione
+python bin/cfit.py cert_c0/H_curve.csv cert_c0/distances.csv cert/obs/cfit_config.json cert_c0/C_fit_report.json
+python bin/cseal.py
+```
+Esito attuale. Vedi ``` cert_c0/SEAL.json ``` per p-value, hash e PASS_ALL.
