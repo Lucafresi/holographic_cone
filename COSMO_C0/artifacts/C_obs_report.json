@@ -1,0 +1,7 @@
+{
+  "etherington_rel_max": 0.0,
+  "lowz_slope_rel": 0.0,
+  "PASS_ETHERINGTON": true,
+  "PASS_LOWZ": true,
+  "note": "DL'(0)=c/H0 verificata per identit\u00e0 analitica; nessuna approssimazione numerica."
+}

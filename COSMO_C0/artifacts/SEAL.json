@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2025-09-09T22:55:34Z",
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "2.3.3",
+    "pandas": "2.3.2",
+    "scipy": "1.16.1",
+    "mpmath": "1.3.0"
+  },
+  "C_OBS": {
+    "etherington_rel_max": 0.0,
+    "lowz_slope_rel": 0.0,
+    "PASS_ETHERINGTON": true,
+    "PASS_LOWZ": true,
+    "note": "DL'(0)=c/H0 verificata per identit\u00e0 analitica; nessuna approssimazione numerica."
+  },
+  "C_FIT": {
+    "chi2_total": 565.72061860175,
+    "dof_total": 580,
+    "chi2_reduced": 0.9753803768995689,
+    "PASS_REDUCED_CHI2_LE_1": true,
+    "PASS": true,
+    "blocks": {
+      "SNe_chi2": 565.7206089669339,
+      "SNe_dof": 579,
+      "H0_chi2": 9.634815999958619e-06,
+      "H0_dof": 1
+    },
+    "hard_tests": {
+      "SNe_KS_p": 0.5396331787015167,
+      "SNe_Runs_p": 0.8039663255520375,
+      "SNe_Spearman_rho": 0.06785297753775808,
+      "SNe_Spearman_p": 0.1025799700156648,
+      "SNe_BinUniform_ok": true,
+      "SNe_BinUniform_worst_zscore": -1.0452257546415107
+    }
+  },
+  "p_value": 0.656574408410708,
+  "N_SNe": 580,
+  "hashes": {
+    "artifacts/H_curve.csv": "e93ddc95649225973db998b6926f65f15d220dca2d2f855b8c87eedea6924fc0",
+    "artifacts/distances.csv": "e6859ed7d88165a19ddfb1046b22fdd2a7a0d509fc96944125c970dd30f383ac",
+    "artifacts/C_obs_report.json": "2be64cdc61d783a8190e8a9217a39c14db9d3ae7a6d51a4ef23424949c30d9f4",
+    "artifacts/C_fit_report.json": "5947aa295906764f66fbcc4c1535a21713fd67868e2e995b619626dbf8b97795"
+  },
+  "PASS_ALL": true
+}

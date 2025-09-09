@@ -1,0 +1,21 @@
+{
+  "chi2_total": 565.72061860175,
+  "dof_total": 580,
+  "chi2_reduced": 0.9753803768995689,
+  "PASS_REDUCED_CHI2_LE_1": true,
+  "PASS": true,
+  "blocks": {
+    "SNe_chi2": 565.7206089669339,
+    "SNe_dof": 579,
+    "H0_chi2": 9.634815999958619e-06,
+    "H0_dof": 1
+  },
+  "hard_tests": {
+    "SNe_KS_p": 0.5396331787015167,
+    "SNe_Runs_p": 0.8039663255520375,
+    "SNe_Spearman_rho": 0.06785297753775808,
+    "SNe_Spearman_p": 0.1025799700156648,
+    "SNe_BinUniform_ok": true,
+    "SNe_BinUniform_worst_zscore": -1.0452257546415107
+  }
+}
