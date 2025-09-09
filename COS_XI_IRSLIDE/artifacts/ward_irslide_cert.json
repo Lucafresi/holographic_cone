@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "note": "Ward identity with sliding IR boundary; Richardson 3-level",
+    "levels": 3
+  },
+  "model_A": {
+    "tIR": 10.0,
+    "lhs_num_dxi_dt": -0.008120116994133496,
+    "rhs_ward": -0.008120116994196762,
+    "rel_err": 6.326536516887415e-14,
+    "PASS": true
+  },
+  "model_B": {
+    "tIR": 20.0,
+    "lhs_num_dxi_dt": 0.01000000000003048,
+    "rhs_ward": 0.009999999999999986,
+    "rel_err": 3.0492969260720315e-14,
+    "PASS": true
+  }
+}
