@@ -1,0 +1,25 @@
+{
+  "xi": 1.9999999989472883e-09,
+  "rho_Lambda_t0": 6.266851628356843e-08,
+  "inputs": {
+    "Mpl": 2.435e+18,
+    "t0": 4.35e+17,
+    "Leff": 1.0,
+    "Aprime_UV": -0.3,
+    "Aprime_IR": -0.299999998,
+    "Tbar": 1e-12,
+    "coeff": {
+      "cB": 1.0,
+      "cT": 1.0
+    }
+  },
+  "checks": {
+    "ward_scale_invariance": {
+      "invariant_under_local_rescalings": true,
+      "note": "\u03be non usa \u2113 locale"
+    }
+  },
+  "error_budget": {
+    "model_rel": 0.1
+  }
+}
