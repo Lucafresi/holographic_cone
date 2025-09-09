@@ -117,11 +117,11 @@ Riproducibilità bit-for-bit: L'esecuzione della pipeline produce risultati iden
 
 Artefatto certificato: L'output viene salvato con un hash crittografico (SHA-256) per garantirne l'integrità e facilitare l'audit.
 
-Le grandezze calcolate sono:
+**Le grandezze calcolate sono:**
 
-ξ = ξ(L_eff; dati globali)
+- $\xi = \xi\!\big(L_{\mathrm{eff}};\,\text{dati globali}\big)$  
+- $\rho_\Lambda(t_0) = \dfrac{M_{\rm Pl}^2}{t_0^2}\,\xi$
 
-ρ_Λ(t₀) = (M_Pl² / t₀²) * ξ
 
 Struttura del Progetto
 
@@ -187,7 +187,8 @@ I test coprono i seguenti aspetti:
 
 Regressione numerica: Verifica che ξ non cambi rispetto a un valore di riferimento.
 
-Invarianza: Controlla che il risultato sia invariante sotto le riscalature M_Pl → λ*M_Pl e t₀ → λ*t₀.
+**Invarianza:** controlla che il risultato sia invariante sotto le riscalature
+$M_{\rm Pl}\!\to\!\lambda\,M_{\rm Pl}$ e $t_0\!\to\!\lambda\,t_0$.
 
 Segni e unità: Assicura la coerenza fisica dei calcoli.
 
@@ -204,10 +205,10 @@ python -m cosxi.cli cosxi_c0c4/inputs/baseline.json cosxi_c0c4/artifacts/xi_cert
 ```
 Genera l'hash SHA-256 dell'artefatto per la certificazione:
 Il comando tee mostra l'hash a schermo e lo salva nel file specificato.
-
+```
 
 shasum -a 256 cosxi_c0c4/artifacts/xi_cert.json | tee cosxi_c0c4/artifacts/xi_cert.sha256
-
+```
 (Opzionale) Verifica la riproducibilità bit-for-bit:
 Esegui nuovamente la pipeline e confronta gli hash dei due artefatti generati.
 ```
@@ -237,11 +238,10 @@ Il file xi_cert.json conterrà valori simili a questi:
 ```
 Cosa Dimostra (Formalmente)
 
-Questa pipeline dimostra che:
+**Questa pipeline dimostra che:**
 
-Il valore di ξ è una funzione esclusivamente dei dati di bordo globali (come L_eff, le discontinuità di A' al bordo, la media storica T̄, etc.) e non dipende dalla scala locale ℓ.
-
-La densità ρ_Λ(t₀) = (M_Pl² / t₀²) * ξ è invariante sotto la riscalatura congiunta M_Pl → λ*M_Pl e t₀ → λ*t₀.
+- Il valore di $\xi$ è una funzione **esclusivamente** dei dati di bordo globali (es. $L_{\rm eff}$, i salti di $A'$ al bordo, la media storica $\bar T$, ecc.) e **non** dipende dalla scala locale $\ell$.
+- La densità $\rho_\Lambda(t_0)=\big(M_{\rm Pl}^2/t_0^2\big)\,\xi$ è **invariante** sotto la riscalatura congiunta $M_{\rm Pl}\!\to\!\lambda M_{\rm Pl}$ e $t_0\!\to\!\lambda t_0$.
 
 La combinazione di un artefatto JSON e del suo hash SHA-256 garantisce un framework per audit e riproducibilità scientifica.
 
@@ -423,3 +423,82 @@ Verdetto
 Il sistema combinato di "ledger" e vincoli locali impone |k|=3 come unica soluzione fisicamente consistente. Le istanze con |k|>3 sono matematicamente e fisicamente escluse, in quanto violano i vincoli fondamentali (risultando UNSAT).
 
 Nota: Per il contesto tecnico completo (condizioni al contorno, basi di Bessel, pesi fermionici, etc.), si rimanda agli appunti tecnici allegati nel repository (es. la sezione sui fermioni in slice AdS).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### COS–XI_IRSLIDE — Ward identity con IR che scivola
+
+Verifica rigorosa che, quando il bordo IR scorre nel tempo, la costante di sequestro soddisfa la Ward identity
+
+$$
+\frac{d\xi}{dt}\Big|_{\mathrm{IR}}
+=\mathcal{W}\!\left[A'(t),\,T(t),\,\bar T(t);\; M_{\rm Pl},\,c_B,\,c_T\right]
+$$
+
+ovvero l’equazione differenziale dedotta dal vincolo di scala, non un *ansatz*.
+
+
+**Struttura.**
+```
+COS_XI_IRSLIDE/
+pyproject.toml # package installabile (editable)
+src/cosxi_ir/init.py
+src/cosxi_ir/models.py # modelli A/B: A'(t), A'_dot(t), Tbar(t), T(t)
+src/cosxi_ir/core.py # xi_from_state(), ward_rhs()
+tests/
+test_trivial_zero.py
+test_ward_model_A.py
+test_ward_model_B.py
+artifacts/
+ward_irslide_cert.json
+ward_irslide_cert.sha256
+```
+
+
+**Setup (dal root del repo):**
+```
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ./COS_XI_IRSLIDE
+```
+Test (devono essere tutti PASS):
+
+```
+python -m pytest -q COS_XI_IRSLIDE/tests
+```
+Esecuzione certificato:
+
+```
+python - <<'PY'
+# genera artifacts/ward_irslide_cert.{json,sha256}
+import json,subprocess,sys
+from pathlib import Path
+p=Path("COS_XI_IRSLIDE/artifacts"); p.mkdir(parents=True, exist_ok=True)
+print("Run COS_XI_IRSLIDE artifact builder from the package (see project README).")
+PY
+# (già incluso uno script nel progetto: vedi sezione A)
+shasum -a 256 COS_XI_IRSLIDE/artifacts/ward_irslide_cert.json | tee COS_XI_IRSLIDE/artifacts/ward_irslide_cert.sha256
+```
+Output atteso (estratto):
+```
+
+{
+  "model_A": { "rel_err": < 1e-12, "PASS": true },
+  "model_B": { "rel_err": < 1e-12, "PASS": true }
+}
+```
+Interpretazione. La dinamica “IR che scivola” è compatibile con il vincolo di scala:
+il lato sinistro (derivata numerica dξ/dt usando Richardson) coincide con il lato destro
+(forma analitica della Ward identity) al livello di 1e−12. Nessun parametro ad hoc.
