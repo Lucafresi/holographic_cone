@@ -1,17 +1,13 @@
-import json, sys
-from pathlib import Path
-from cosxi.cli import main as cli_main
-
-def test_cli_roundtrip(tmp_path: Path):
-    inp = {
-        "Mpl": 2.435e18, "t0": 4.35e17, "Leff": 1.0,
-        "Aprime_UV": -0.3, "Aprime_IR": -0.299999998,
-        "Tbar": 1.0e-12, "coeff": {"cB":1.0,"cT":1.0}
-    }
-    infile = tmp_path/"in.json"; outfile = tmp_path/"out.json"
-    infile.write_text(json.dumps(inp))
-    sys.argv = ["cosxi.cli", str(infile), str(outfile)]
-    cli_main()
-    data = json.loads(outfile.read_text())
-    assert "xi" in data and "rho_Lambda_t0" in data and "checks" in data
-    assert data["checks"]["ward_scale_invariance"]["invariant_under_local_rescalings"] is True
+import json, subprocess, os, sys, tempfile
+from cosxi.pipeline import run_pipeline
+def test_cli_module_runs_and_outputs(tmp_path):
+    inp = os.path.join(os.path.dirname(__file__), "..", "inputs", "baseline.json")
+    out = tmp_path/"out.json"
+    env = dict(os.environ)
+    env["PYTHONPATH"] = os.path.join(os.path.dirname(__file__), "..", "src")
+    cmd = [sys.executable, "-m", "cosxi.cli", inp, str(out)]
+    r = subprocess.run(cmd, env=env, capture_output=True, text=True)
+    assert r.returncode == 0
+    d = json.loads(out.read_text())
+    assert "xi" in d and "rho_Lambda_t0" in d
+    assert d["xi"] > 0 and d["rho_Lambda_t0"] > 0

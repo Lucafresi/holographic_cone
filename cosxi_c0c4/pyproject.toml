@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosxi"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "C0/C4 pipeline: holographic sequester xi(Leff; global data)"
+authors = [{name="LF"}]
+dependencies = []
+
+[project.scripts]
+cosxi = "cosxi.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["cosxi"]
