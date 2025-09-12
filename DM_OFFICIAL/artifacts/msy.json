@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "uv_toric": "CY_cone_on_dP3",
+  "beta": 1,
+  "integrals": {
+    "int_c1_sq": 6
+  },
+  "volumes": {
+    "VolX5_over_pi3_rational": "2/9",
+    "VolX5_numeric": 6.8902837067332925,
+    "VolSigma_over_pi2_rational": "2/9",
+    "VolSigma_numeric": 2.193245422464302
+  },
+  "checks": {
+    "class": "quasi-regular_KE",
+    "reeb_lock": "UNIQUE",
+    "hessian_pd": true,
+    "reason": "Base K\u00e4hler\u2013Einstein (\u03b2=1) \u21d2 minimo unico MSY; nessun continuo."
+  },
+  "hash": "ea1cdaae81e1d1ebc07bee0f4e54b6ba6f7aa61142b40984f15ecda4c5cbe126"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "cutoffs": {
+    "Umax": 6,
+    "Nmax": 5,
+    "epsilon_bound": "<=3e-14 (RS.err)"
+  },
+  "fan": "toric_dP3",
+  "log_eta": 0.015170808721046137,
+  "eta": 1.0152864695891224,
+  "terms_accumulated": 67,
+  "hash": "70dd3bb6bff1d822c5cf827857f320bb253906030ab1e1a8267cfc95baa7d5b1"
+}

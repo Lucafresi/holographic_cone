@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "uv_model": "toric_dP3",
+  "freed_witten": {
+    "w2_nonspin": true,
+    "B_class_from_ledger": true,
+    "solution_exists_for_F": true,
+    "witness_flux_parity": "F = -B - 1/2 w2  (class mod Z)"
+  },
+  "charged_modes": {
+    "D7_intersections": false,
+    "verdict": "PASS"
+  },
+  "hash": "f3fe84d00468ba3d169e04daf4f4cbc519db5cb44cc64e20de7693ee39a2f90c"
+}

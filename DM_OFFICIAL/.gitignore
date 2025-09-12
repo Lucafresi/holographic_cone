@@ -1,0 +1,7 @@
+# local env
+.venv/
+# caches / bytecode
+__pycache__/
+*.pyc
+# OS cruft
+.DS_Store

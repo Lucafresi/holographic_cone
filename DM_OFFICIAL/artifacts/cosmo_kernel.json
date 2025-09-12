@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "cosmo_kernel": {
+    "formula": "Omega = Kmis * Gstar(Tosc) * theta_i^2 * mu * fa^(3/2) * exp(-S/4)",
+    "invert_S": "S = 4 * ln[ Kmis * Gstar(Tosc) * theta_i^2 * mu * fa^(3/2) / Omega ]",
+    "constants": {
+      "Mpl_reduced_GeV": 2.435e+18,
+      "s0_cm^-3": 2891.2,
+      "rho_c_over_h2_GeV_cm^-3": 1.05375e-05,
+      "H_radiation_coeff": 1.66,
+      "Kmis_numeric": 9.147215071844441e-19
+    },
+    "inputs_required": [
+      "fa_GeV",
+      "mu_GeV",
+      "theta_i",
+      "Omega_target",
+      "Gstar_at_Tosc"
+    ]
+  },
+  "hash": "d13285c487c1903d38953f1d9b560127b59c2f51f977da5d295ab73fccc59ba1"
+}

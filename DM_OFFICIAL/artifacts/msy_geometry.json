@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "uv_toric": "CY_cone_on_dP3",
+  "volumes": {
+    "VolX5": 6.8902837067332925,
+    "VolSigma": 2.193245422464302,
+    "rational_over_pi": {
+      "VolX5/pi^3": "2/9",
+      "VolSigma/pi^2": "2/9"
+    }
+  },
+  "hash": "0e30aea0cd7204f5cde5232689775d2b7e9c0d61114aa65374ac6c660963c8c2"
+}

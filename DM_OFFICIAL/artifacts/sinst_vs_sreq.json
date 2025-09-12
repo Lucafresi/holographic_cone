@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "S_req": 150.817,
+  "chosen": {
+    "N": 6,
+    "q": 8,
+    "n": 48,
+    "S_inst": 150.79644737231007
+  },
+  "abs_diff": 0.020552627689937708,
+  "tolerance": "5e-2 (hard), 2e-1 (near)",
+  "hash": "ca9f10d246481f4d3b83525ccaee931f81547b753aedede00e1483f988cc55e7"
+}

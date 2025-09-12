@@ -1,0 +1,7 @@
+{
+  "model": "toric_dP3",
+  "K_BF": [[1]],
+  "K_CS": [[3]],
+  "two_group": { "type": "Z", "order": 3, "representative": "minimal_abs" },
+  "acceptance": { "basis": "integral", "quantization": "integer_levels", "inflow_branes": "unique_solution" }
+}

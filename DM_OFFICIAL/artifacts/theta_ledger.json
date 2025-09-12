@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "uv_model": "toric_dP3",
+  "torsion_invariants": [
+    3
+  ],
+  "allowed_thetas_rad": [
+    0.0,
+    2.0943951023931953,
+    4.1887902047863905
+  ],
+  "hash": "a843678e85917954c803ddddcb69c68c29536f243bb022b6449fa546ac766f21"
+}

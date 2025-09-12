@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "fa_GeV": 9999999999999942.0,
+    "S_inst": 150.79644737231007,
+    "Kmis": 9.147215071844441e-19,
+    "Omega_target": 0.12
+  },
+  "grid": [
+    {
+      "G*": 20,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 20,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 35258300.81606511
+    },
+    {
+      "G*": 20,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 8814575.204016278
+    },
+    {
+      "G*": 30,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 30,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 23505533.87737674
+    },
+    {
+      "G*": 30,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 5876383.469344185
+    },
+    {
+      "G*": 40,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 40,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 17629150.408032555
+    },
+    {
+      "G*": 40,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 4407287.602008139
+    },
+    {
+      "G*": 50,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 50,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 14103320.326426044
+    },
+    {
+      "G*": 50,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 3525830.081606511
+    },
+    {
+      "G*": 60,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 60,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 11752766.93868837
+    },
+    {
+      "G*": 60,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 2938191.7346720924
+    },
+    {
+      "G*": 70,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 70,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 10073800.23316146
+    },
+    {
+      "G*": 70,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 2518450.058290365
+    },
+    {
+      "G*": 80,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 80,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 8814575.204016278
+    },
+    {
+      "G*": 80,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 2203643.8010040694
+    },
+    {
+      "G*": 90,
+      "theta": 0.0,
+      "mu_required_GeV": null,
+      "reason": "theta_zero_leads_to_Omega_zero"
+    },
+    {
+      "G*": 90,
+      "theta": 2.0943951023931953,
+      "mu_required_GeV": 7835177.95912558
+    },
+    {
+      "G*": 90,
+      "theta": 4.1887902047863905,
+      "mu_required_GeV": 1958794.489781395
+    }
+  ],
+  "hash": "6d1bc27450da95afd51660062d2347aaa10a647a77eb087662fe29facc83bced"
+}

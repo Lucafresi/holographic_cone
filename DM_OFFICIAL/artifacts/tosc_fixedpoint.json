@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "fa_GeV": 9999999999999942.0,
+    "theta": 2.0943951023931953,
+    "S_inst": 150.7964473723101,
+    "Omega_target": 0.12,
+    "k_periodicity": 3
+  },
+  "solution": {
+    "mu_req_sc_GeV": 6605770.644696086,
+    "T_osc_GeV": 24890118.172913235,
+    "Gstar_at_Tosc": 106.75,
+    "m_a_GeV": 0.013090861743098639
+  },
+  "hash": "444e9c06a9a2d70223497b1f622023f8a6547a75b8d24cbb7702d0434c6412a1"
+}
