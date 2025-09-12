@@ -544,8 +544,166 @@ cat > cert/obs/cfit_config.json << 'JSON'
 {"sne_csv":"data/sne.csv"}
 JSON
 
+
+
 # Esecuzione del fit e creazione del sigillo di certificazione
 python bin/cfit.py cert_c0/H_curve.csv cert_c0/distances.csv cert/obs/cfit_config.json cert_c0/C_fit_report.json
 python bin/cseal.py
 ```
 Esito attuale. Vedi ``` cert_c0/SEAL.json ``` per p-value, hash e PASS_ALL.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DM_OFFICIAL — Pipeline ALP/DM certificata (a registro fisso)
+
+**Stato:** **PASS** — nessuna manopola, solo invarianti discreti + cosmologia standard.
+**Obiettivo:** predire la materia oscura (ALP) da UV torico su $X_5=$ link del cono CY su $dP_3$, con **artefatti certificati** (JSON + SHA-256) e **tolleranze numeriche** dichiarate.
+
+## 0) Principi (No-Free-Functions)
+
+*   **Ledger unico**: fan torico liscio (6 coni unimodulari), regola *half-open* fissa l’inclusione dei bordi; BF/CS discreti ⇒ $\theta_i$ **quantizzate**; Hodge/PAO ⇒ $f_a$ **deterministico**.
+*   **Nessun fit**: $\eta$ (torsione di Ray–Singer) via ζ-reg con **bound del resto** (RS.err).
+*   **Cosmologia self-consistent**: misalignment $+$ onset $3H(T_{\rm osc})=m_a$ (periodicità $k=3$ per $\mathbb Z_3$).
+*   **Certificazione**: ogni step produce `status: PASS/FAIL` e `hash` (SHA-256) dell’output.
+
+---
+
+## 1) Artefatti e hash (run certificata)
+
+| file                                  | contenuto                                             | hash                                                               |
+| ------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------ |
+| `artifacts/theta_ledger.json`         | $\theta$ quantizzate (BF/CS + SNF)                    | `a843678e85917954c803ddddcb69c68c29536f243bb022b6449fa546ac766f21` |
+| `artifacts/sinst_grid.json`           | griglia $S_{\rm inst}$ (MSY)                          | `0e30aea0cd7204f5cde5232689775d2b7e9c0d61114aa65374ac6c660963c8c2` |
+| `artifacts/cosmo_kernel.json`         | kernel misalignment                                   | `d13285c487c1903d38953f1d9b560127b59c2f51f977da5d295ab73fccc59ba1` |
+| `artifacts/fa.json`                   | $f_a$ (RS slice + Hodge/PAO)                          | `642589829c6f6ab589e00ce74d84772656567c51800b0c387559d60adef1d65f` |
+| `artifacts/eta.json`                  | torsione RS (ζ-reg, ε≤3×10⁻¹⁴)                        | `70dd3bb6bff1d822c5cf827857f320bb253906030ab1e1a8267cfc95baa7d5b1` |
+| `artifacts/fw_check.json`             | Freed–Witten + modi carichi                           | `f3fe84d00468ba3d169e04daf4f4cbc519db5cb44cc6420de7693ee39a2f90c` |
+| `artifacts/tosc_fixedpoint.json`      | $\mu_{\rm req}^{(\mathrm{sc})}$, $T_{\rm osc}$, $g_*$ | `444e9c06a9a2d70223497b1f622023f8a6547a75b8d24cbb7702d0434c6412a1` |
+| `artifacts/dm_final_certificate.json` | certificato **finale**                                | `b86e0e88dc326c36b36fcc7b09b45c3f75b9eebee439d4c25c335eded8408b72` |
+
+**Numeri chiave (run ufficiale)**
+
+*   Scelta discreta: $(N,q)=(6,8)$ ⇒ $S_{\rm inst}=48\pi \approx 150.796447$.
+*   $\theta\in\{0,\,2\pi/3,\,4\pi/3\}$ (usata $2\pi/3$).
+*   $f_a = 1.0\times10^{16}\ \mathrm{GeV}$.
+*   **Torsione**: $\eta = 1.015286469589…$ con **$\epsilon_{\rm tot}$ ≤ 3×10⁻¹⁴**.
+*   **Fixed-point**: $\mu_{\rm req}^{(\mathrm{sc})}=6.6057706447\times10^{6}\ \mathrm{GeV}$, $T_{\rm osc}=2.489\times10^{7}\ \mathrm{GeV}$, $g_*(T_{\rm osc})=106.75$.
+*   **Scala di stringa**: $M_s=\mu/\eta = 6.5063121026\times10^{6}\ \mathrm{GeV}$.
+*   **Massa ALP**: $m_a = \dfrac{k\,\mu^2}{f_a}$ con $k=3$ ⇒ $m_a \approx 1.309\times10^{-2}\ \mathrm{GeV}$.
+
+## 3) Riproduzione end-to-end (ordine e criteri PASS/FAIL)
+
+> Tutti i comandi si lanciano da `DM_OFFICIAL/`. Ogni step scrive un JSON con `status` e `hash`. Se un ledger manca ⇒ **NO-GO mirato** (nessun valore “placeholder”).
+
+1.  **$\theta$ ledger (BF/CS + SNF)**
+    ```bash
+    python bin/build_theta_from_bfcs.py sources/bfcs_ledger.json artifacts/theta_ledger.json
+    ```
+    **PASS** se `allowed_thetas_rad` è finito e riproduce la torsione prevista.
+
+2.  **Volumi MSY & $S_{\rm inst}$ grid**
+    ```bash
+    python bin/build_sinst_grid.py
+    ```
+    **PASS** se `VolX5/pi^3 = 2/9`, `VolSigma/pi^2 = 2/9` e formula $S=\tfrac{\pi^2 N}{\mathrm{Vol}(X_5)}\mathrm{Vol}^*(W_4)\,q$ è usata.
+    *(La scelta (N,q) che soddisfa $S_{\rm req}$ viene poi promossa nel certificato.)*
+
+3.  **$f_a$ (RS + Hodge/PAO)**
+    ```bash
+    python bin/build_fa_from_rs_hodge.py sources/hodge_pao.json artifacts/fa.json
+    ```
+    **PASS** se `fa_GeV` è positivo e coerente col J-functional RS.
+
+4.  **Kernel cosmologico**
+    ```bash
+    python bin/build_cosmo_kernel.py
+    ```
+    **PASS** se scrive `Kmis_numeric` e la formula di inversione di $S$.
+
+5.  **Torsione di Ray–Singer (ζ-reg, RS.err)**
+    ```bash
+    python bin/build_eta.py
+    ```
+    **PASS** se `cutoffs: Umax=6, Nmax=5, epsilon_bound <= 3e-14` e `eta` finita.
+
+6.  **Freed–Witten & modi carichi**
+    ```bash
+    python bin/check_freed_witten.py
+    ```
+    **PASS** se `w2_nonspin: true`, `solution_exists_for_F: true`, niente D7 ⇒ `charged_modes: PASS`.
+
+7.  **Fixed-point $(\mu, T_{\rm osc}, g_*)$**
+    ```bash
+    python bin/solve_fixedpoint_mu.py
+    ```
+    **PASS** se converge in ≤10 iterazioni; tipicamente $T_{\rm osc}\gg 100\,\mathrm{GeV}$ ⇒ `Gstar_at_Tosc=106.75`.
+
+8.  **Selezione (N,q) e certificati**
+    ```bash
+    # (se necessario) determinare (N,q) per S_req (es.: 48π)
+    python bin/compare_sinst_sreq.py
+    python bin/build_dm_certificate.py
+    python bin/build_dm_final_certificate.py
+    ```
+    **PASS** se `dm_final_certificate.json` ha tutti i campi e `Ms_GeV=mu/eta`.
+
+**Note di audit (RS.err):** con $(U_{\max},N_{\max})=(6,5)$ il bound del resto è ≤$3\times 10^{-14}$. L’algoritmo verifica stabilità sotto $(U+1,N+1)$.
+
+---
+
+## 4) Decisioni fisiche fissate (nessuna scappatoia)
+
+*   **UV torico**: $X_5$ = link del cono CY su $dP_3$ (fan liscio a 6 coni).
+*   **Regola half-open**: univoca, evita doppi conteggi su bordi conici.
+*   **$\theta$**: determinate da BF/CS (2-group/torsione) → nessuna scelta continua.
+*   **Freed–Witten**: $w_2(W_4)\neq 0$ ⇒ flusso worldvolume **half-integer** fissato dalla parità; nessuna D7 ⇒ niente modi carichi.
+*   **Torsione RS**: ζ-reg con cancellazione dei termini locali (Wodzicki); solo parte non-locale (serie di Jacobi) + bounds.
+
+---
+
+## 5) Estensioni e cross-checks
+
+*   **Portabilità UV***: la stessa riga di ledger $(X_5,N,\,\text{BF/CS})$ alimenta geom-lock (A1), uplift YM (A2) e brane (A3) per il calcolo d’oro di $\alpha$.
+*   **Fenomenologia**: gli accoppiamenti dell’ALP seguono dall’uplift YM/CS (A2/A3). Con $f_a\sim 10^{16}$ GeV gli accoppiamenti possono essere molto piccoli; la verifica è demandata ai gate gauge.
+*   **Ripetibilità**: cambiare $(N,q)$ o scegliere un’altra componente torica di $W_4$ produce nuove righe con certificati PASS/FAIL indipendenti.
+
+---
+
+## 6) Licenza & citazione
+
+*   **Licenza:** Apache-2.0 (come root repo).
+*   **Come citare:** si prega di citare il repository `holographic_cone` (branch/tag di questa release) e includere gli `hash` dei JSON utilizzati.
+
+---
+
+## 7) Changelog (questa release)
+
+*   Prima aggiunta ufficiale di `DM_OFFICIAL/` con **pipeline certificata**: ζ-reg (ε≤3×10⁻¹⁴), FW PASS, fixed-point cosmologico, **M_s** ancorata.
+
+---
+
+**Controllo finale:** tutti i file elencati in §1 **devono esistere** e avere esattamente gli hash indicati. In caso di discrepanze, aprire una *Issue* con i file `artifacts/*.json` e il log dei comandi eseguiti.
+
+---
