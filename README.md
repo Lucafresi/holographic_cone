@@ -707,3 +707,62 @@ Esito attuale. Vedi ``` cert_c0/SEAL.json ``` per p-value, hash e PASS_ALL.
 **Controllo finale:** tutti i file elencati in §1 **devono esistere** e avere esattamente gli hash indicati. In caso di discrepanze, aprire una *Issue* con i file `artifacts/*.json` e il log dei comandi eseguiti.
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## holo_kY — Hypercharge kY=2
+
+Scopo: eseguire il test che rigenera i certificati (PASS/FAIL) per l’embedding dell’ipercarica.
+
+Requisiti
+```
+Python ≥ 3.10
+    
+sympy==1.13.1 (installabile con pip install -r holo_kY/requirements.txt)
+```
+Esecuzione (test)
+
+```
+python holo_kY/src/rebuild_all.py
+```
+Output atteso
+
+Console:
+```
+>> snf_hnf.py
+>> cs_integrality.py
+kY = 2 | PASS = True
+>> orbifold_check.py
+orbifold PASS = True
+All certificates rebuilt.
+```
+
+Artefatti: ```holo_kY/certs/kY/``` (inclusi ```cs_integrality.json, snf.json, rank.txt, orbifold_check.json, input_hashes.json```)
