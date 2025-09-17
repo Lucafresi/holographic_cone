@@ -1,0 +1,24 @@
+{
+  "by_signs_ok": true,
+  "junctions_ok": true,
+  "radion_closed": true,
+  "radion_mode": "dynamic_closed",
+  "free_functions_present": false,
+  "forbidden_terms": {
+    "Veff_t": false,
+    "tension_t": false,
+    "w_t": false,
+    "G_eff_t": false
+  },
+  "H2_from_bulk_ct_only": true,
+  "frw_structure": {
+    "H2": "bulk_global + counterterms + rho-derivati + radion-derivato",
+    "dotH": "determinato da EOM e identit\u00e0"
+  },
+  "provenance": {
+    "section": "02_dinamica_background",
+    "equation": "Riduzione FRW chiusa (nessuna funzione del tempo libera)",
+    "proof_file": "COS_XI_IRSLIDE/profiles/frw_proof.txt",
+    "proof_sha256": "08f977de4d2206e864e8dbd11914e3444bc6cb3a3eb124be43a01ac24ddc320c"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "frw_reduction_ledger": "../COS_XI_IRSLIDE/artifacts/frw_reduction_ledger.json",
+  "background_ledger":    "../COS_XI_IRSLIDE/artifacts/background_ledger.json",
+  "signs_audit":          "../UV_UNIQUENESS/artifacts/signs_audit.json",
+  "kk_tensor_ledger":     "../HOLO_KK/artifacts/kk_tensor_ledger.json"
+}

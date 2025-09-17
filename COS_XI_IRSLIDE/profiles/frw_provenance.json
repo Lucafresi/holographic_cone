@@ -1,0 +1,6 @@
+{
+  "section": "02_dinamica_background",
+  "equation": "Riduzione FRW chiusa (nessuna funzione del tempo libera)",
+  "proof_file": "COS_XI_IRSLIDE/profiles/frw_proof.txt",
+  "radion_mode": "dynamic_closed"
+}

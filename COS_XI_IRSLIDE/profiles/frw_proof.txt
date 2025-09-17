@@ -1,0 +1,2 @@
+Part 9 – 02_dinamica_background: paragrafo "Riduzione FRW chiusa".
+Le EOM 5D + giunzioni (segni Gate-E) fissano la forma di H^2, dot{H} e, se presente, l’equazione del radion senza funzioni del tempo spurie.

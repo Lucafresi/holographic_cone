@@ -1,0 +1,10 @@
+{
+  "gate": "C0_FRW_CLOSED",
+  "verdict_theory": "PASS",
+  "inputs": {
+    "frw_reduction_ledger": "/Users/lucafresi/Desktop/holographic_cone/COS_XI_IRSLIDE/artifacts/frw_reduction_ledger.json",
+    "background_ledger": "/Users/lucafresi/Desktop/holographic_cone/COS_XI_IRSLIDE/artifacts/background_ledger.json",
+    "signs_audit": "/Users/lucafresi/Desktop/holographic_cone/UV_UNIQUENESS/artifacts/signs_audit.json",
+    "kk_tensor_ledger": "/Users/lucafresi/Desktop/holographic_cone/HOLO_KK/artifacts/kk_tensor_ledger.json"
+  }
+}
