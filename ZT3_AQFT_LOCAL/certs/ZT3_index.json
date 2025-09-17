@@ -1,11 +1,12 @@
 {
-  "gate": "ZT3_AQFT_LOCAL",
+  "gate": "ZT3_AQFT_LOCAL+MOD",
   "cert": "certs/zt3_aqft_local.json",
-  "cert_sha256": "7cebc480cc1899f49394bc69a39394a251da31d203bd9a87fcb90da6af8ed284",
+  "cert_sha256": "7945040a244852a6f81f1925f27e05df6b447396161e668cd85c0e83f5febf0c",
   "inputs_sha256": {
     "net_ledger": "544dba81fc82531035b41a489d4dc0d806084ff37079683368ec85835dd7b696",
     "microl_ledger": "66c99edb2233b684e174355f4d4d7e897feda59f76c44f6c0d6f4f1aeee18cba",
     "channels_ledger": "040ede4ff70d8bd90cdafbc78dc8ce7b63ab910aa13d87f8d2a0bec5eaab9df2",
-    "pza_killswitch": "577ad19834938c2b4c52dba7dafdd31824ac4641708838cdc7cd8aa60f4b1f23"
+    "pza_killswitch": "577ad19834938c2b4c52dba7dafdd31824ac4641708838cdc7cd8aa60f4b1f23",
+    "modular_ledger": "2d630d5b5b75ee598a6e6e53624f3e65d151e2625648971c5490585db563d95d"
   }
 }

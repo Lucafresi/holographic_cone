@@ -803,3 +803,10 @@ python orchestrate_deltaz.py
 /Users/lucafresi/Desktop/holographic_cone/G1_LAMBDA_KK
 python orchestrate_G1_LAMBDA_KK.py
 ```
+
+
+## ZT3_AQFT_LOCAL
+```
+/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL
+python orchestrate_zt3.py
+```

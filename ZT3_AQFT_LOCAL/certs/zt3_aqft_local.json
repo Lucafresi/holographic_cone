@@ -5,6 +5,7 @@
     "net_ledger": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/NET/artifacts/net_ledger.json",
     "microl_ledger": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/MICROL/artifacts/microl_ledger.json",
     "channels_ledger": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/CHANNELS/artifacts/channels_ledger.json",
-    "pza_killswitch": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/PZA/artifacts/pza_killswitch.json"
+    "pza_killswitch": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/PZA/artifacts/pza_killswitch.json",
+    "modular_ledger": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/MOD/artifacts/modular_ledger.json"
   }
 }
