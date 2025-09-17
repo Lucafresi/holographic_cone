@@ -1,0 +1,2 @@
+Part 9 – 02_dinamica_background: paragrafo "Bilancio Brown–York e cancellazione del termine di brana".
+La prova on-shell stabilisce H2_brane_local = 0 per identità, con segni e giunzioni coerenti con Gate-E.

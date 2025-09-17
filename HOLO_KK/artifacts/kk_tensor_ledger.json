@@ -1,0 +1,12 @@
+{
+  "graviton_localized": true,
+  "self_adjoint": true,
+  "spectrum_bounded_below": true,
+  "locking_statement_verified": true,
+  "provenance": {
+    "section": "03_perturbazioni_lineari",
+    "equation": "Vincolo spettrale tensoriale in dS-slicing (locking qualitativo)",
+    "proof_file": "HOLO_KK/profiles/provenance.txt",
+    "proof_sha256": "7bd755d389ba70904d85ae9c531dec353a7118ccca0f485ebdb8e0c7ed00ca14"
+  }
+}

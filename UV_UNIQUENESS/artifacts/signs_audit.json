@@ -1,0 +1,13 @@
+{
+  "signs_ok": true,
+  "conventions": {
+    "sigma_UV": -1,
+    "sigma_IR": 1
+  },
+  "provenance": {
+    "section": "Gate-E / segni locali",
+    "equation": "Ancore di segno e convenzioni BY/giunzioni",
+    "proof_file": "UV_UNIQUENESS/profiles/signs.txt",
+    "proof_sha256": "ede1d17f5d0935085da90204e73503618c5d7e03f2c266e347cbfc7d2895a0c0"
+  }
+}

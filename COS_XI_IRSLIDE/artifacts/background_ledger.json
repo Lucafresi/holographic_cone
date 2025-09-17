@@ -1,0 +1,14 @@
+{
+  "H2_brane_local": 0.0,
+  "H2_brane_local_proof": "identity_on_shell",
+  "BY_UV": null,
+  "BY_IR": null,
+  "H2_bulk_global": null,
+  "H2_counterterms": null,
+  "provenance": {
+    "section": "02_dinamica_background",
+    "equation": "Bilancio Brown\u2013York e cancellazione del termine di brana (on-shell)",
+    "proof_file": "COS_XI_IRSLIDE/profiles/provenance.txt",
+    "proof_sha256": "e57ae5a2eab0848b18d3c428bdd0c090b15b4b108a20fc69443b5d3763ff3c8a"
+  }
+}

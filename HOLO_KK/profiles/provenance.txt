@@ -1,0 +1,2 @@
+Part 9 – 03_perturbazioni_lineari: paragrafo "Vincolo spettrale KK in dS-slicing".
+Localizzazione del gravitone, autoaggiuntezza e spettro limitato inferiormente dimostrati nel testo.
