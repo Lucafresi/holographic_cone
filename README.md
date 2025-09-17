@@ -781,3 +781,25 @@ run:
 
 python holo_deltaz/orchestrate_deltaz.py
 ```
+
+
+## C0_FRW_CLOSED
+
+```
+cd /Users/lucafresi/Desktop/holographic_cone/C0_FRW_CLOSED
+python orchestrate_c0.py
+```
+
+## holo_DeltaZ
+
+```
+/Users/lucafresi/Desktop/holographic_cone/holo_DeltaZ
+python orchestrate_deltaz.py
+```
+
+
+## G1_LAMBDA_KK
+```
+/Users/lucafresi/Desktop/holographic_cone/G1_LAMBDA_KK
+python orchestrate_G1_LAMBDA_KK.py
+```

@@ -1,0 +1,9 @@
+{
+  "hadamard_state": true,
+  "nuclearity": true,
+  "split_property": true,
+  "provenance": {
+    "file": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/MICROL/profiles/microl_provenance.txt",
+    "sha256": "5a1e3c0c014da9e9f6a3654586ee51fb64b13f8bfc9645541266b2682fd733ca"
+  }
+}

@@ -1,0 +1,1 @@
+Parte 1 – AQFT: classe Hadamard operativa, nuclearità (Buchholz–Wichmann), split su doppi coni annidati.

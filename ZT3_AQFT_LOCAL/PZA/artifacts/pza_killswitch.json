@@ -1,0 +1,10 @@
+{
+  "ks_loc": false,
+  "ks_rev": false,
+  "ks_freq": false,
+  "ks_erg": false,
+  "provenance": {
+    "file": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/PZA/profiles/pza_provenance.txt",
+    "sha256": "1b4d8de59081e9d796788d4d873fa7b288ccd3295f45efd15c0e5388fbefdde3"
+  }
+}

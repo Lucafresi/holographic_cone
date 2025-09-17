@@ -1,0 +1,9 @@
+{
+  "local_cptp": true,
+  "internal_stinespring": true,
+  "info_monotonicity": true,
+  "provenance": {
+    "file": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/CHANNELS/profiles/channels_provenance.txt",
+    "sha256": "344c9b9c4da36d45ca04c6db4db4fe6ad1f9ad6c4ba222a389af312c2ebe67e6"
+  }
+}

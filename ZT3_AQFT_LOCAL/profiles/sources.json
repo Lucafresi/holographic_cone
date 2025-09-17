@@ -1,0 +1,6 @@
+{
+  "net_ledger":       "NET/artifacts/net_ledger.json",
+  "microl_ledger":    "MICROL/artifacts/microl_ledger.json",
+  "channels_ledger":  "CHANNELS/artifacts/channels_ledger.json",
+  "pza_killswitch":   "PZA/artifacts/pza_killswitch.json"
+}

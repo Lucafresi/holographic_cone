@@ -1,0 +1,11 @@
+{
+  "isotony": true,
+  "locality": true,
+  "additivity": true,
+  "time_slice": true,
+  "covariance": true,
+  "provenance": {
+    "file": "/Users/lucafresi/Desktop/holographic_cone/ZT3_AQFT_LOCAL/NET/profiles/net_provenance.txt",
+    "sha256": "c96e66b2224e467946b56d5a8a41545ee0af8e0d17dc58681d7c417c89587d4c"
+  }
+}
