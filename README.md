@@ -766,3 +766,18 @@ All certificates rebuilt.
 ```
 
 Artefatti: ```holo_kY/certs/kY/``` (inclusi ```cs_integrality.json, snf.json, rank.txt, orbifold_check.json, input_hashes.json```)
+
+
+
+
+
+
+
+# holographic_cone — orchestrators
+
+## Δz (ledger-only)
+run:
+```
+
+python holo_deltaz/orchestrate_deltaz.py
+```
