@@ -1,4 +1,4 @@
 {
-  "flux_cert_path": "/Users/lucafresi/Desktop/holographic_cone/holo_DeltaZ/../holo_flux/certs/flux.json",
-  "flux_cert_sha256": "a59d602751174f5960612e14200064deee33f4ff70ef4dbe4650e08635c4541e"
+  "flux_cert_path": "holo_DeltaZ/flux/certs/flux.json",
+  "flux_cert_sha256": "4998c1c369de7067093816a0944038b8caa77161d90f331ab4a5215953534f3a"
 }
