@@ -1,7 +1,0 @@
-{
-  "inputs": {
-    "charges_matrix.json": "628f602ac9de9c190089855ac28d219da67780251ea197f1dbaedefab20041bd",
-    "su5_mixed_cs.json": "407bd41b0e981a28726b2fdb95104b1f86deb2ecbd584af615c3dd5c0cbbfa49",
-    "orbifold_parities.csv": "2bb7d375131536208f0dcffdcd46de30d553cac41fb85c1210c0b324f01edc98"
-  }
-}

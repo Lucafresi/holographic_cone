@@ -1,0 +1,14 @@
+{
+  "lambda_UV": 1,
+  "lambda_IR": 1,
+  "r_gauge": 0,
+  "provenance": {
+    "gates_checked": [
+      "FW/CS integrality (kY=2)",
+      "orbifold \u03a33 PASS (doublet\u2013triplet ok, no U(1)')",
+      "no local p^2 knobs; r_gauge=0",
+      "NEC/concavity admissibility for GW BC"
+    ]
+  },
+  "PASS": true
+}

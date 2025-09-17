@@ -1,0 +1,10 @@
+{
+  "VolX5": 8.887716336143113,
+  "VolSigma3": 5.139400829541474,
+  "provenance": {
+    "method": "MSY closed-form for Y^{p,q}",
+    "p": 2,
+    "q": 1
+  },
+  "PASS": true
+}

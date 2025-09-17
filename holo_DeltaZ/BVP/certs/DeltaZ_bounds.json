@@ -1,0 +1,10 @@
+{
+  "DeltaZ_min": 25.435545339882722,
+  "DeltaZ_max": 25.435545339932723,
+  "width": 5e-11,
+  "PASS": true,
+  "provenance": {
+    "flux_cert_path": "/Users/lucafresi/Desktop/holographic_cone/holo_DeltaZ/certs/DeltaZ.json",
+    "dbi_gw_robin_path": "/Users/lucafresi/Desktop/holographic_cone/holo_DeltaZ/DBI/certs/gw_robin.json"
+  }
+}

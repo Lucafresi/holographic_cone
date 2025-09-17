@@ -1,0 +1,13 @@
+{
+  "DeltaZ_min": 25.435545339907723,
+  "DeltaZ_max": 25.435545339907723,
+  "width": 0.0,
+  "PASS": true,
+  "method": "KS flux: \u0394z = 2\u03c0K/(3 g_s M)",
+  "inputs": {
+    "gs": 0.25,
+    "M": 83,
+    "K": 252,
+    "N": 20916
+  }
+}
