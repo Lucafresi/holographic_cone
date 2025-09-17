@@ -79,7 +79,7 @@ def strict_checks():
     return fails
 
 def main():
-    banner("Δz ORCHESTRATOR — esecuzione end-to-end con note 'bendate'")
+    banner("Δz ORCHESTRATOR — esecuzione end-to-end")
 
     run(
         "src/flux_to_DeltaZ.py",
