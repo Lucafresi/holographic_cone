@@ -1,8 +1,0 @@
-{
-  "PASS": true,
-  "checks": [
-    "doublet–triplet split OK",
-    "no surviving U(1)'",
-    "parity assignment consistent on Σ3"
-  ]
-}
