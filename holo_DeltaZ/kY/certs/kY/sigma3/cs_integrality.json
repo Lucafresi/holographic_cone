@@ -1,0 +1,9 @@
+{
+  "aY22": 1.0,
+  "aY33": 1.0,
+  "kY": 2,
+  "PASS": true,
+  "inputs_sha256": {
+    "su5_mixed_cs.json": "d2f8165b40215373c8632ea73f6ed9ff7e5b0872621304fec40534553674ee48"
+  }
+}

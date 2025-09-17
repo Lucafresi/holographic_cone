@@ -1,0 +1,7 @@
+{
+  "PASS": true,
+  "fails": [],
+  "inputs_sha256": {
+    "orbifold_parities.csv": "7747ce7b7a89ca6eeea45704163c790fb16dc601c9f12d50a96610c59b344ddb"
+  }
+}

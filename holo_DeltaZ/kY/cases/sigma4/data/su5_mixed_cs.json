@@ -1,0 +1,10 @@
+{
+  "aY22": 1.0,
+  "aY33": 1.0,
+  "kY": 2,
+  "provenance": {
+    "from": "DBI/WZ + hypercharge embedding kY=2",
+    "norm": "Tr_fund(F^2)=1/2",
+    "note": "chiuso analiticamente; nessun input IR"
+  }
+}

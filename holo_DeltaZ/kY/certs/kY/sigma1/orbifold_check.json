@@ -1,0 +1,9 @@
+{
+  "PASS": false,
+  "fails": [
+    "Triplet not projected: H_triplet_1 ++"
+  ],
+  "inputs_sha256": {
+    "orbifold_parities.csv": "6c3d8bf02d3b4a94d2f43246d1cf11bbd9fe6c46f0f6b313a11da52e6c654cee"
+  }
+}

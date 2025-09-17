@@ -1,0 +1,9 @@
+{
+  "PASS": false,
+  "fails": [
+    "Unwanted U(1)' survives: U1prime_field ++"
+  ],
+  "inputs_sha256": {
+    "orbifold_parities.csv": "c6ad56f2130c0e8e9bac5c4dcb669e0c083ccdb3262b975bdf73956e5ea7a41a"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "invariants": [
+    1,
+    1,
+    1
+  ],
+  "rank": 3,
+  "inputs": {
+    "charges_matrix.json": "/Users/lucafresi/Desktop/holographic_cone/holo_DeltaZ/kY/cases/sigma4/data/charges_matrix.json"
+  }
+}

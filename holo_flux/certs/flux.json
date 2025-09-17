@@ -1,0 +1,11 @@
+{
+  "gs": 0.25,
+  "M": 83,
+  "K": 252,
+  "N": 20916,
+  "provenance": {
+    "branch": "L2 @ WY=Sigma3",
+    "constraint": "K even (FW/CS), minimal discrete complexity, SUGRA regime gs*M >> 1",
+    "notes": "minimal (M,K) ≤ 150 with K even; N=K*M"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "PASS": false,
+  "fails": [
+    "Doublet wrongly projected: H_doublet_1"
+  ],
+  "inputs_sha256": {
+    "orbifold_parities.csv": "69655759c14f4a5ee5f225d591eedfbd9ffb2618f33193409a1125a0b5a2c3a3"
+  }
+}
